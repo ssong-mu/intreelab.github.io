@@ -65,7 +65,7 @@ $(document).ready(function () {
 					$("#fp-nav ul").find("li").each(function () {
 						var index = $(this).index() + 1;
 						if(!$(this).find(".text").length) {
-							$("<div class='text'><img src='/img/main/fpText" + index + ".png' alt='icon'></div>").appendTo($(this).find("a"))
+							$("<div class='text'><img src='../img/main/fpText" + index + ".png' alt='icon'></div>").appendTo($(this).find("a"))
 						}
 						if ($(this).find("a").hasClass("active")) {
 							$(this).addClass("on");
