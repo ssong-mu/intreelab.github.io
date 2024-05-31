@@ -97,8 +97,8 @@ $(document).ready(function () {
 			
 			$("#fullpage .products .swiper-slide").each(function(){
 				var productsSrc = $(this).find("img").attr("src");
-				if(productsSrc == "/img/main/productsImg4.png") {
-					$(this).find("img").attr("src", "/img/main/productsImg4_mo.png")
+				if(productsSrc == "../img/main/productsImg4.png") {
+					$(this).find("img").attr("src", "../img/main/productsImg4_mo.png")
 				}
 			})
 		} else {
@@ -109,8 +109,8 @@ $(document).ready(function () {
 			}
 			$("#fullpage .products .swiper-slide").each(function(){
 				var productsSrc = $(this).find("img").attr("src");
-				if(productsSrc == "/img/main/productsImg4_mo.png") {
-					$(this).find("img").attr("src", "/img/main/productsImg4.png")
+				if(productsSrc == "../img/main/productsImg4_mo.png") {
+					$(this).find("img").attr("src", "../img/main/productsImg4.png")
 				}
 			})
 		}
@@ -189,7 +189,7 @@ $(document).ready(function () {
 	$(".products .swiper-pagination > li").each(function(){
 		var index = $(this).index() + 1;
 		if (!$(this).find(".icon").length) {
-			$("<div class='icon'><img src='/img/main/productsIcon" + index + ".png' alt='icon'></div>").prependTo($(this))
+			$("<div class='icon'><img src='../img/main/productsIcon" + index + ".png' alt='icon'></div>").prependTo($(this))
 		}
 	})
 	$(".products .swiper-pagination > li").on("click", function () {
