@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+/*font + */
+@import url('https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Sans+KR:300,400,500,600,700&subset=korean');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+@font-face {
+	font-family: 'Pretendard', sans-serif;
+	unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+/* @font-face {
+	font-family: 'Pretendard',
+		sans-serif;
+	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+} */
+
+/*safari input*/
+input[type='button'],
+input[type='submit'] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+
+/* input 기본 스타일 초기화 */
+input {
+	-webkit-border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear {
+	display: none;
+}
+
+
+/* input type number 에서 화살표 제거 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Select box 스타일 초기화  */
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* IE 에서 Select box 화살표 제거 */
+select::-ms-expand {
+	display: none;
+}
+
+
+/*드래그색상 정의*/
+/* ::-moz-selection { background:#263658; color:#fff; }
+::selection { background:#263658; color:#fff; } */
+
+/*기본태그 정의*/
+* {
+	max-height: 1000000px;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	word-break: keep-all;
+	font-size: 62.5%;
+	font-family: 'Montserrat', 'Roboto', 'Pretendard';
+}
+
+/* 모바일 가로모드 폰트확대 방지 */
+body {
+	-webkit-text-size-adjust: none;
+}
+
+html,
+body,
+table,
+input,
+textarea {
+	color: #666666;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+img {
+	display: inline-block;
+}
+
+button {
+	padding: 0;
+	outline: none;
+}
+
+
+/* for AXISJ */
+body,
+select,
+input,
+a,
+button {
+	line-height: 1;
+}
+
+/* 링크 테두리 제거 */
+a {
+	outline: none;
+	select-dummy: expression(this.hideFocus=true);
+}
+
+/* 마진과 패딩의 초기화 */
+div,
+pre,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+input,
+select,
+textarea {
+	margin: 0;
+	padding: 0;
+}
+
+/* 헤더 폰트 사이즈 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+/* 리스트의 스타일 제거 */
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+em,
+address {
+	font-style: normal;
+}
+
+/* 테이블 스타일 초기화 */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+	width: 100%;
+	border: 0;
+}
+
+table th {
+	word-wrap: break-word;
+}
+
+table td {
+	word-wrap: break-word;
+}
+
+/* 이미지 및 필드셋에서 보더 표시 초기화 */
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+img,
+fieldset {
+	border: none;
+}
+
+img,
+object {
+	vertical-align: top;
+}
+
+/* 캡션 텍스트 정렬 초기화 */
+caption {
+	text-align: left;
+}
+
+/* 폼태그의 초기화 */
+button {
+	border: none;
+	background: transparent;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus {
+	border: none;
+	outline: none;
+}
+
+button,
+input[type="submit"] {
+	cursor: pointer;
+}
+
+select {
+	vertical-align: middle;
+	color: #666666;
+}
+
+input {
+	vertical-align: middle;
+	color: #666666;
+}
+
+textarea {
+	color: #666666;
+}
+
+input[type="radio"] {
+	vertical-align: middle;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none;
+}
+
+/* 스킵네비게이션 */
+#sknavi {
+	position: absolute;
+}
+
+#sknavi li a {
+	position: absolute;
+	top: -200px;
+}
+
+#sknavi li a:focus,
+#sknavi li a:active {
+	top: 1px;
+	left: 0;
+	display: block;
+	width: 150px;
+	color: #fff;
+	height: 18px;
+	padding: 5px 3px 0 3px;
+	margin-left: 5px;
+	text-align: center;
+	font-size: 100%;
+	font-weight: bold;
+	background: #115aa3;
+	text-decoration: none;
+}

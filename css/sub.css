@@ -1,0 +1,2458 @@
+.font25 {
+  --fontsize: 2.5rem;
+  font-size: var(--fontsize)
+}
+
+.font26 {
+  --fontsize: 2.6rem;
+  font-size: var(--fontsize)
+}
+
+.font28 {
+  --fontsize: 2.8rem;
+  font-size: var(--fontsize)
+}
+
+.font32 {
+  --fontsize: 3.2rem;
+  font-size: var(--fontsize)
+}
+
+.font36 {
+  --fontsize: 3.6rem;
+  font-size: var(--fontsize)
+}
+
+.font38 {
+  --fontsize: 3.8rem;
+  font-size: var(--fontsize)
+}
+
+.font40 {
+  --fontsize: 4.0rem;
+  font-size: var(--fontsize)
+}
+
+.font45 {
+  --fontsize: 4.5rem;
+  font-size: var(--fontsize)
+}
+
+.font56 {
+  --fontsize: 5.6rem;
+  font-size: var(--fontsize)
+}
+
+.font60 {
+  --fontsize: 6.0rem;
+  font-size: var(--fontsize)
+}
+
+.font64 {
+  --fontsize: 6.4rem;
+  font-size: var(--fontsize)
+}
+
+.font65 {
+  --fontsize: 6.5rem;
+  font-size: var(--fontsize)
+}
+
+.font80 {
+  --fontsize: 8.0rem;
+  font-size: var(--fontsize)
+}
+
+#sv {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  position: relative
+}
+
+#sv.sv01 .bg {
+  background-image: url("/img/sub/subVisual1.jpg")
+}
+
+#sv.sv02 .bg {
+  background-image: url("/img/sub/subVisual2_n.jpg")
+}
+
+#sv.sv03 .bg {
+  background-image: url("/img/sub/subVisual3.jpg")
+}
+
+#sv.sv04 .bg {
+  background-image: url("/img/sub/subVisual4.jpg")
+}
+
+#sv.sv05 .bg {
+  background-image: url("/img/sub/subVisual5_n.jpg")
+}
+
+#sv.sv06 .bg {
+  background-image: url("/img/sub/subVisual6.jpg")
+}
+
+#sv.sv07 .bg {
+  background-image: url("/img/sub/subVisual7.jpg")
+}
+
+#sv .subVisual {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%
+}
+
+#sv .bg {
+  transform: scale(1.08);
+  transition: all 1.2s linear;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center
+}
+
+#sv h2 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1.8em;
+  text-indent: 1.8em;
+  padding: 0 20px;
+  opacity: 0;
+  transition: all 1s linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#sv .pathBox {
+  height: 60px;
+  flex-shrink: 0;
+  border-bottom: 1px solid #ddd
+}
+
+#sv .path {
+  display: flex;
+  height: 100%
+}
+
+#sv .path>li {
+  height: 100%;
+  border-right: 1px solid #ddd;
+  padding: 0 24px;
+  position: relative
+}
+
+#sv .path>li.home {
+  width: 60px;
+  border-left: 1px solid #ddd
+}
+
+#sv .path>li.home a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#sv .path>li.home a i {
+  color: #F37A01
+}
+
+#sv .path>li button {
+  justify-content: space-between;
+  color: #666;
+  font-size: 1.6rem;
+  letter-spacing: -0.025em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+#sv .path>li button i {
+  color: #333;
+  margin: 0 0 0 20px;
+}
+
+#sv .path>li ul {
+  width: 100%;
+  background: #f8f8f8;
+  padding: 15px 24px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  display: none
+}
+
+#sv .path>li ul li a {
+  display: block;
+  color: #666;
+  letter-spacing: -0.025em;
+  padding: 10px 0
+}
+
+#sv .path>li ul li.on a {
+  color: #00508e;
+  font-weight: 600;
+}
+
+#sv .path .path1 {
+  width: 230px
+}
+#sv .path .path2 {
+  width: 300px
+}
+#sv .path .detailPath {
+  width: auto;
+  min-width: 230px;
+}
+#sv .path .path2.noPage { 
+  display: none
+}
+
+#sv.on .bg {
+  transform: scale(1)
+}
+
+#sv.on h2 {
+  letter-spacing: 0;
+  text-indent: 0;
+  opacity: 1
+}
+
+.subPage {
+  padding: 100px 0 140px
+}
+
+.subPage .subTopTitle {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 0 0 45px;
+  margin: 0 0 80px
+}
+
+.subPage .subTopTitle .font40 {
+  color: #222;
+  font-weight: 700
+}
+
+.subPage.paddingBottomX {
+  padding: 100px 0 0
+}
+
+.icon3Row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 10px
+}
+
+.icon3Row li {
+  gap: 0 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.icon3Row li .icon {
+  width: 60px;
+  height: 60px;
+  background: #f6f6f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.icon3Row li p,
+.icon3Row li span {
+  letter-spacing: -0.05em
+}
+
+.icon3Row li p {
+  color: #444;
+  font-size: 1.7rem
+}
+
+.icon3Row li span {
+  display: block;
+  color: #777;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 5px 0 0
+}
+
+#subContents .overview h4 {
+  color: #222;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2
+}
+
+#subContents .overview h4 br {
+  display: none
+}
+
+#subContents .overview .circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#subContents .overview .info {
+  margin: 0 0 120px
+}
+
+#subContents .overview .info .text {
+  text-align: center
+}
+
+#subContents .overview .info p {
+  color: #444;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  line-height: 1.8888;
+  margin: 35px 0 0
+}
+
+#subContents .overview .info ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 0
+}
+
+#subContents .overview .info ul li {
+  text-align: center
+}
+
+#subContents .overview .info ul li p {
+  margin: 0
+}
+
+#subContents .overview .info .circle {
+  width: 210px;
+  height: 210px;
+  background: #f8fcff
+}
+
+#subContents .overview .info b {
+  display: inline-block;
+  color: #00508e;
+  font-weight: 600;
+  margin: 20px 0 10px
+}
+
+#subContents .overview .introduction {
+  width: 100%;
+  max-width: 1400px;
+  padding: 120px 0;
+  position: relative
+}
+
+#subContents .overview .introduction::before,
+#subContents .overview .introduction::after {
+  content: "";
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#subContents .overview .introduction::before {
+  background-image: url("/img/sub/overviewBg.jpg");
+  z-index: -2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#subContents .overview .introduction::after {
+	display: block;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+#subContents .overview .introduction * {
+  color: #fff
+}
+
+#subContents .overview .introduction .flexBox {
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+#subContents .overview .introduction h6 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 0 0 15px
+}
+
+#subContents .overview .introduction .itemBox {
+  width: 100%;
+  max-width: 850px;
+  /* height: 670px; */
+  display: flex;
+  flex-direction: column;
+  gap: 75px 0;
+  margin: 20px 0 0;
+  /* overflow-y: scroll */
+}
+
+#subContents .overview .introduction .itemBox::-webkit-scrollbar {
+  width: 0
+}
+
+#subContents .overview .introduction .introTableBox {
+  border-top: 1px solid rgba(255, 255, 255, .3)
+}
+
+#subContents .overview .introduction table th,
+#subContents .overview .introduction table td {
+  font-size: 1.8rem;
+  letter-spacing: -0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .overview .introduction table th {
+  width: 210px;
+  font-weight: 400;
+  background: rgba(255, 255, 255, .07);
+  padding: 15px 0
+}
+
+#subContents .overview .introduction table td {
+  font-weight: 300;
+  line-height: 1.4444;
+  padding: 15px 20px;
+  opacity: .8
+}
+
+#subContents .overview .introduction table ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0
+}
+
+#subContents .overview .introduction table ul li {
+  display: flex;
+  gap: 0 7px
+}
+
+#subContents .overview .introduction table ul li::before {
+  content: "·";
+  font-weight: 700
+}
+
+#subContents .overview .model {
+  margin: 120px 0 0
+}
+
+#subContents .overview .model h4 {
+  color: #222;
+  text-align: center
+}
+
+#subContents .overview .model ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 25px;
+  margin: 60px 0 0
+}
+
+#subContents .overview .model ul li {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  padding: 45px 55px
+}
+
+#subContents .overview .model .circle {
+  width: 140px;
+  height: 140px;
+  background: #f6f6f6;
+  margin: 0 auto
+}
+
+#subContents .overview .model h5 {
+  color: #00508e;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.025em;
+  margin: 16px 0 10px
+}
+
+#subContents .overview .model dl {
+  margin-top: 20px
+}
+
+#subContents .overview .model dl * {
+  letter-spacing: -0.025em;
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .overview .model dl dt {
+  color: #222;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 10px
+}
+
+#subContents .overview .model dl dd {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0
+}
+
+#subContents .overview .model dl dd p {
+  display: flex;
+  gap: 0 5px;
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.3333
+}
+
+#subContents .overview .model dl dd p::before {
+  content: "·";
+  font-size: 1.8rem;
+  font-weight: 600
+}
+
+#subContents .ceo .itemBox {
+  gap: 0 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+#subContents .ceo h4 {
+  color: #00508e
+}
+
+#subContents .ceo .pBox {
+  display: flex;
+  flex-direction: column;
+  gap: 35px 0;
+  margin: 30px 0 50px
+}
+
+#subContents .ceo .pBox p {
+  color: #444;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  line-height: 1.8888;
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .ceo h6 {
+  color: #111;
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Nanum Myeongjo", serif
+}
+
+#subContents .history .box {
+  position: relative
+}
+
+#subContents .history .tab {
+  display: flex;
+  flex-direction: column;
+  gap: 110px 0;
+  margin: 0;
+  position: absolute;
+  top: 170px;
+  left: 30px;
+  transition: all .6s
+}
+
+#subContents .history .tab::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: calc(100% - 20px);
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%)
+}
+
+#subContents .history .tab li * {
+  transition: all .4s
+}
+
+#subContents .history .tab li button {
+  gap: 0 10px;
+  color: #777;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+#subContents .history .tab li span {
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  position: relative
+}
+
+#subContents .history .tab li span::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #777;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#subContents .history .tab li:hover button,
+#subContents .history .tab li.on button {
+  color: #F37A01;
+  font-weight: 500
+}
+
+#subContents .history .tab li:hover span,
+#subContents .history .tab li.on span {
+  background: #fff;
+  border-color: #F37A01
+}
+
+#subContents .history .tab li:hover span::before,
+#subContents .history .tab li.on span::before {
+  background: #F37A01
+}
+
+#subContents .history .tab.fixed {
+  position: fixed;
+  top: 170px;
+  left: 30px
+}
+
+#subContents .history .itemBox,
+#subContents .history ul,
+#subContents .history .pBox {
+  display: flex;
+  flex-direction: column
+}
+
+#subContents .history .itemBox {
+  gap: 140px 0
+}
+
+#subContents .history .img {
+  position: relative;
+}
+
+#subContents .history .img .point {
+  max-width: 28%;
+  position: absolute;
+  top: 26%;
+  right: -10px;
+}
+
+#subContents .history .text {
+  display: flex;
+  margin: 35px 0 0
+}
+
+#subContents .history b {
+  display: block;
+  width: 30%;
+  color: #222;
+  font-size: 6rem;
+  font-weight: 700
+}
+
+#subContents .history b em {
+  font-size: 5.4rem
+}
+
+#subContents .history ul {
+  gap: 30px 0;
+  margin: 20px 0 0
+}
+
+#subContents .history ul li {
+  display: flex
+}
+
+#subContents .history ul li * {
+  letter-spacing: -0.025em;
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .history ul li span {
+  width: 115px;
+  flex-shrink: 0;
+  color: #222;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#subContents .history .pBox {
+  gap: 18px 0
+}
+
+#subContents .history .pBox p {
+  font-size: 1.9rem;
+  font-weight: 300
+}
+
+#subContents .history .pBox p em {
+  display: block;
+  margin: 8px 0 0
+}
+
+#subContents .philosophy ul {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 40px
+}
+
+#subContents .philosophy ul li {
+  width: 27.28%;
+  flex-shrink: 0;
+  border-radius: 50%;
+  padding: 13.64% 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  position: relative
+}
+
+#subContents .philosophy ul li .inner {
+  flex-direction: column;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#subContents .philosophy ul li:not(:last-child) {
+  margin: 0 0 0 -3.04%
+}
+
+#subContents .philosophy ul li:nth-child(4) {
+  background: #0aa8ee
+}
+
+#subContents .philosophy ul li:nth-child(3) {
+  background: #0088c7
+}
+
+#subContents .philosophy ul li:nth-child(2) {
+  background: #0068b0
+}
+
+#subContents .philosophy ul li:nth-child(1) {
+  background: #005190
+}
+
+#subContents .philosophy ul li .icon {
+  height: 74px;
+  margin: 0 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#subContents .philosophy ul li dl {
+  text-align: center
+}
+
+#subContents .philosophy ul li dl dt {
+  font-size: 3.4rem;
+  font-weight: 300;
+  margin: 0 0 10px
+}
+
+#subContents .philosophy ul li dl dt b {
+  font-size: 4rem;
+  font-weight: 700
+}
+
+#subContents .philosophy ul li dl dd {
+  font-size: 2.1rem;
+  font-weight: 500
+}
+
+#subContents .philosophy .textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 120px 0;
+  margin: 140px 0 0
+}
+
+#subContents .philosophy .textBox .text {
+  display: flex
+}
+
+#subContents .philosophy .textBox h5,
+#subContents .philosophy .textBox p {
+  color: #222;
+  font-weight: 600
+}
+
+#subContents .philosophy .textBox h5 {
+  width: 26.25%
+}
+
+#subContents .philosophy .textBox p {
+  line-height: 1.2;
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .philosophy .textBox p br {
+  display: none
+}
+
+#subContents .philosophy .textBox p span {
+  display: block;
+  color: #777;
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 14px 0 0;
+  font-family: "Roboto", sans-serif
+}
+
+#subContents .affiliate .itemBox {
+  display: flex;
+  flex-direction: column;
+  gap: 100px 0
+}
+
+#subContents .affiliate .item {
+  gap: 0 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+#subContents .affiliate .item>div {
+  width: calc(50% - 20px)
+}
+
+#subContents .affiliate .item:nth-child(odd) .text {
+  padding: 0 0 0 40px
+}
+
+#subContents .affiliate h4 {
+  color: #000;
+  font-weight: 700
+}
+
+#subContents .affiliate .pBox {
+  display: flex;
+  flex-direction: column;
+  gap: 35px 0;
+  margin: 30px 0 75px
+}
+
+#subContents .affiliate .pBox p {
+  color: #222;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  line-height: 1.7777;
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .affiliate .hoverButton {
+  color: #666
+}
+
+#subContents .affiliate .hoverButton p {
+  font-size: 1.5rem
+}
+
+#subContents .icon3RowBox * {
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .icon3RowBox .itemBox {
+  display: flex;
+  flex-direction: column;
+  gap: 100px 0
+}
+
+#subContents .icon3RowBox .text {
+  display: flex;
+  margin: 45px 0 0
+}
+
+#subContents .icon3RowBox .text h4 {
+  width: 33.5%;
+  color: #222;
+  font-weight: 700;
+  flex-shrink: 0
+}
+
+#subContents .icon3RowBox .text>div {
+  width: 100%
+}
+
+#subContents .workplace.icon3RowBox .itemBox {
+  gap: 60px 0;
+}
+#subContents .workplace .tabContents>div {
+  display: none;
+}
+#subContents .workplace .tabContents>div.on {
+  display: flex;
+}
+#subContents .workplace .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#subContents .workplace dl dt {
+  color: #222;
+  font-size: 2.3rem;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1.2;
+  margin: 0 0 15px
+}
+
+#subContents .workplace dl dd,
+#subContents .workplace dl dd p {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+#subContents .workplace dl dd p {
+  gap: 0 15px
+}
+
+#subContents .workplace dl dd p * {
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .workplace dl dd p b {
+  color: #444;
+  font-weight: 400;
+  letter-spacing: -0.05em
+}
+
+#subContents .workplace dl dd p span {
+  font-size: 1.7rem
+}
+
+#subContents .workplace dl dd hr {
+  width: 1px;
+  height: 10px;
+  border: none;
+  background: #aaa;
+  margin: 0 15px
+}
+
+#subContents .workplace .top ul {
+  display: flex;
+  gap: 0 10px;
+}
+
+#subContents .workplace .top ul li {
+  height: 50px;
+  border: 1px solid #dddddd;
+  padding: 0 12px;
+}
+
+#subContents .workplace .top ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
+  color: #00508e;
+  font-size: 1.5rem;
+}
+
+#subContents .workplace .infra {
+  display: flex;
+  flex-direction: column;
+  gap: 45px 0;
+}
+
+#subContents .workplace .infra h6 {
+  color: #00508e;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0 0 26px;
+}
+
+#subContents .workplace .infra ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+#subContents .workplace .infra ul.grid3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px;
+}
+
+#subContents .workplace .infra .img {
+  padding: 27.205% 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#subContents .workplace .infra img {
+  min-width: 100%;
+/*  min-height: 100%;*/
+/*  max-width: inherit;*/
+/*  max-height: inherit;*/
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#subContents .workplace .infra p {
+  color: #444;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+#subContents .workplace hr {
+  width: 100%;
+  height: 1px;
+  background: #dddddd;
+  border: none;
+  margin: 0;
+}
+
+#subContents .customers .tabTitle {
+  display: flex;
+  height: 74px;
+  margin: 0 0 60px
+}
+
+#subContents .customers .tabTitle li {
+  background: #f4f4f4;
+  transition: all .4s;
+  width: 100%;
+  height: 100%
+}
+
+#subContents .customers .tabTitle li button {
+  color: #777;
+  font-size: 2rem;
+  transition: all .4s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#subContents .customers .tabTitle li.on {
+  background: #00508e
+}
+
+#subContents .customers .tabTitle li.on button {
+  color: #fff;
+  font-weight: 600
+}
+
+#subContents .customers .itemBox {
+  display: flex;
+  flex-direction: column;
+  gap: 60px 0
+}
+
+#subContents .customers .item ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px
+}
+
+#subContents .customers .item ul li {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#subContents .customers h6 {
+  color: #222;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0 0 15px
+}
+
+#subContents .productsList * {
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .productsList .contents {
+  display: flex;
+  gap: 0 80px
+}
+
+#subContents .productsList .productsMenu {
+  width: 260px;
+	width: 18.6%;
+	flex-shrink: 0;
+}
+
+#subContents .productsList .productsMenu * {
+  letter-spacing: -0.05em
+}
+
+#subContents .productsList .productsMenu>li {
+  width: 100%
+}
+
+#subContents .productsList .productsMenu>li>a {
+  width: 100%;
+  justify-content: space-between;
+  font-size: 2rem;
+  color: #444;
+  font-weight: 700;
+  padding: 0 0 25px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+#subContents .productsList .productsMenu>li>a::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: rgba(0, 80, 142, .3);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all .4s
+}
+
+#subContents .productsList .productsMenu>li>a i {
+  font-size: 1.6rem
+}
+
+#subContents .productsList .productsMenu>li ul {
+  padding: 12px 20px 27px;
+  display: none
+}
+
+#subContents .productsList .productsMenu>li ul li a {
+  display: block;
+  color: #aaa;
+  font-size: 1.5rem;
+  letter-spacing: -0.025em;
+  padding: 8px 0;
+  transition: all .4s
+}
+
+#subContents .productsList .productsMenu>li ul li:hover a {
+  color: #777
+}
+
+#subContents .productsList .productsMenu>li.on>a {
+  color: #00508e
+}
+
+#subContents .productsList .productsMenu>li.on>a::before {
+  width: 100%
+}
+
+#subContents .productsList .productsMenu>li.on>a i {
+  transform: rotate(180deg)
+}
+
+#subContents .productsList .title {
+  margin: 0 0 50px;
+}
+
+#subContents .productsList .title h4 {
+  color: #222;
+  font-weight: 700;
+  margin: 0 0 25px;
+}
+
+#subContents .productsList .title p {
+  color: #222;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  line-height: 1.5555;
+  font-family: "Pretendard", sans-serif;
+}
+
+#subContents .productsList .itemBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px
+}
+
+#subContents .productsList .item {
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  padding: 55px 30px
+}
+
+#subContents .productsList .img {
+  width: 100%;
+  padding: 43.5% 0;
+  position: relative;
+  overflow: hidden
+}
+
+#subContents .productsList .img img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#subContents .productsList dl {
+  text-align: center;
+  margin: 45px 0 0
+}
+
+#subContents .productsList dl>* {
+  line-height: 1.2
+}
+
+#subContents .productsList dl dt {
+  color: #222;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0 0 10px
+}
+
+#subContents .productsList dl dd {
+  color: #666
+}
+
+#subContents .productsDetail * {
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .productsDetail .contents {
+  display: flex
+}
+
+#subContents .productsDetail .contents>div {
+  width: 50%
+}
+
+#subContents .productsDetail .img {
+  border: 1px solid #ccc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#subContents .productsDetail .img img {
+  max-width: calc(100% - 40px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#subContents .productsDetail .info {
+  padding: 20px 0 0 65px
+}
+
+#subContents .productsDetail .title {
+  color: #222
+}
+
+#subContents .productsDetail h3 {
+  font-weight: 700;
+  color: #222;
+}
+
+#subContents .productsDetail .title h4 {
+  font-weight: 600;
+  margin: 24px 0 0
+}
+
+#subContents .productsDetail .list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  margin: 45px 0 35px
+}
+
+#subContents .productsDetail .list li {
+  display: flex;
+  gap: 0 5px;
+  color: #444;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.2
+}
+
+#subContents .productsDetail .list li::before {
+  content: "·";
+  font-weight: 800
+}
+
+#subContents .productsDetail .button {
+  width: 100%;
+  height: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 10px
+}
+
+#subContents .productsDetail .button li,
+#subContents .productsDetail .button li a {
+  width: 100%;
+  height: 100%
+}
+
+#subContents .productsDetail .button li {
+  border: 1px solid #666;
+  transition: all .4s
+}
+
+#subContents .productsDetail .button li a {
+  gap: 0 8px;
+  color: #666;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all .4s;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#subContents .productsDetail .button li:hover {
+  background: #00508e;
+  border-color: #00508e
+}
+
+#subContents .productsDetail .button li:hover img {
+  filter: brightness(0) invert(1)
+}
+
+#subContents .productsDetail .button li:hover a {
+  color: #fff
+}
+
+#subContents .productsDetail hr {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, .15);
+  border: none;
+  margin: 45px 0
+}
+
+#subContents .productsDetail .dlBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0
+}
+
+#subContents .productsDetail .dlBox * {
+  letter-spacing: -0.015em
+}
+
+#subContents .productsDetail .dlBox dl {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+#subContents .productsDetail .dlBox dl dt {
+  width: 100px;
+  color: #777;
+  font-weight: 500
+}
+
+#subContents .productsDetail .dlBox dl dd {
+  color: #999
+}
+
+/* vacuum */
+/* 230522 */
+
+#subContents .tableBox.new table th,
+#subContents .tableBox.new table td {
+  padding: 20px;
+}
+
+#subContents .tableBox.new table th {
+  position: relative;
+  height: 80px;
+  border-right: none;
+}
+
+#subContents .tableBox.new table th:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #aaa;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+#subContents .tableBox.new table td {
+  text-align: center;
+  padding: 20px;
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+  border-color: #DDDDDD;
+}
+
+#subContents .tableBox.new table td.left,
+#subContents .tableBox.new table td.left * {
+  text-align: left;
+}
+
+#subContents .tableBox.new table td:last-child {
+  border-right: none;
+}
+
+#subContents .tableBox.new table td,
+#subContents .tableBox.new table td *:not(select):not(option) {
+  line-height: 1.875;
+  text-align: center;
+}
+
+#subContents .vacuumDetail .tableBox table,
+#subContents .tableBox.new table {
+  border-top: 2px solid #00508E;
+  border-left: none;
+}
+
+#subContents .vacuumDetail .tableBox table th,
+#subContents .tableBox.new table th {
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-right: none;
+}
+
+#subContents .vacuumDetail .tableBox table td,
+#subContents .tableBox.new table td {
+  font-weight: 300;
+  color: #222222;
+  font-size: 1.6rem;
+}
+
+#subContents .vacuumDetail .info p {
+  line-height: 1.5882;
+  font-size: 1.7rem;
+  color: #444;
+  margin: 60px 0 30px;
+}
+
+#subContents .vacuumDetail .info a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+  color: #666;
+  font-weight: 500;
+  padding: 18px 20px;
+  border: 1px solid rgba(102, 102, 102, 0.3);
+  transition: all 0.4s;
+}
+
+#subContents .vacuumDetail .info a:hover {
+  background: #00508E;
+  border-color: #00508E;
+  color: #fff;
+}
+
+#subContents .vacuumDetail .tabTitle {
+  display: flex;
+  margin: 100px 0 60px;
+}
+
+#subContents .vacuumDetail .tabTitle li {
+  width: 100%;
+  height: 80px;
+}
+
+#subContents .vacuumDetail .tabTitle li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+  color: #888;
+  font-size: 2.0rem;
+  width: 100%;
+  height: 100%;
+}
+
+#subContents .vacuumDetail .tabTitle li.on button {
+  background: #00508E;
+  color: #fff;
+  font-weight: 500;
+}
+
+#subContents .vacuumDetail .tabContents h3 {
+  margin: 0 0 30px;
+}
+
+#subContents .vacuumDetail .features h5 {
+  color: #00508E;
+  font-weight: 600;
+  border-top: 2px solid #00508E;
+}
+
+#subContents .vacuumDetail .features h5,
+#subContents .vacuumDetail .features ul li {
+  min-height: 70px;
+  padding: 20px;
+  border-bottom: 1px solid #DDDDDD;
+  display: flex;
+  align-items: center;
+}
+
+#subContents .vacuumDetail .features ul {
+  margin-bottom: 100px;
+}
+
+#subContents .vacuumDetail .features ul li {
+  color: #222;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+#subContents .vacuumDetail .features ul li::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #222;
+  margin: 0 10px;
+}
+
+#subContents .vacuumDetail .specifications th,
+#subContents .vacuumDetail .specifications td {
+  line-height: 1.75;
+  height: 80px;
+  padding: 10px 20px;
+}
+#subContents .vacuumDetail .specifications table th {
+  text-align: left;
+  background: #ffffff;
+  color: #00508E;
+  border-right: 1px solid #ccc;
+}
+
+#subContents .vacuumDetail .specifications th em {
+  color: #666666;
+  font-weight: 300;
+  display: block;
+  font-size: 1.52rem;
+}
+
+#subContents .vacuumDetail .specifications td {
+  border-right: none;
+}
+
+#subContents .vacuumDetail .specifications tr.black th,
+#subContents .vacuumDetail .specifications tr.black td,
+#subContents .vacuumDetail .specifications th.black {
+  border-bottom: 1px solid #888888;
+}
+
+#subContents .vacuumDetail .specifications th.black {
+  color: #222222;
+  border-right: none;
+}
+
+#subContents .vacuumDetail .part td em {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+#subContents .vacuumDetail .part td em.block {
+  display: block;
+  line-height: 1.2;
+}
+
+#subContents .vacuumDetail select {
+    width: 90.35%;
+	height: 52px;
+    padding: 0 20px;
+	border-radius: 10px;
+    font-size: 1.6rem;
+	font-weight: 300;
+	color: #666;
+    border: none;
+    outline: none;
+    appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #f8f8f8 url(/img/sub/selectArrow.png) no-repeat calc(100% - 20px) center;
+}
+
+#subContents .vacuumDetail .part .bottom td {
+  background: #F9F9F9;
+  border-bottom: 1px solid #888888;
+  height: 100px;
+  border-right: none;
+  padding: 0;
+}
+
+#subContents .vacuumDetail .part td .flexBox {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#subContents .vacuumDetail .part td .flexBox span {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+#subContents .vacuumDetail .part td label {
+  max-width: 17.5%;
+}
+
+#subContents .vacuumDetail .part td .flexBox span::after {
+  content: "";
+  display: block;
+  background: #ddd;
+  height: 10px;
+  width: 1px;
+  margin: 0 0 0 45px;
+}
+
+#subContents .vacuumDetail .part .bottom input {
+  width: auto;
+  max-width: 100%;
+/*  max-width: 5.8rem;*/
+  background: transparent;
+  font-size: 3.0rem;
+  font-weight: 700;
+  color: #222;
+  text-align: right;
+  padding: 10px 30px;
+}
+
+#subContents .vacuumDetail .part .bottom input:placeholder-shown {
+  font-size: 1.8rem;
+}
+
+#subContents .vacuumDetail .part .bottom input::placeholder {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: 'Pretendard';
+}
+
+#subContents .vacuumDetail .part .buttons {
+  display: flex;
+  gap: 0 20px;
+  justify-content: flex-end;
+  margin: 30px 0 0;
+}
+
+#subContents .vacuumDetail .part .buttons a {
+  width: 200px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+  font-weight: 500;
+  color: #666;
+  border: 1px solid rgba(102, 102, 102, 0.3);
+  transition: all 0.4s;
+}
+
+#subContents .vacuumDetail .part .buttons a:hover {
+  color: #fff;
+  background: #00508E;
+}
+
+#subContents .vacuumDetail .download ul {
+  border-top: 2px solid #00508e;
+  margin-bottom: 100px;
+}
+
+#subContents .vacuumDetail .download ul li {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  gap: 0 20px;
+}
+
+#subContents .vacuumDetail .download .text {
+  overflow: hidden;
+}
+
+#subContents .vacuumDetail .download h5 {
+  color: #222;
+  font-weight: 600;
+  margin: 0 0 10px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+#subContents .vacuumDetail .download span {
+  color: #888;
+}
+
+#subContents .vacuumDetail .download a {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  height: 62px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  gap: 0 10px;
+  color: #666;
+  font-size: 1.8rem;
+  font-weight: 300;
+  transition: all 0.4s;
+}
+
+#subContents .vacuumDetail .download a:hover {
+  color: #fff;
+  background: #00508E;
+}
+
+#subContents .esg .subTitle {
+  text-align: center
+}
+
+#subContents .esg .subTitle b {
+  color: #00508e;
+  font-size: 1.8rem;
+  font-weight: 700
+}
+
+#subContents .esg .subTitle h4 {
+  color: #222;
+  font-weight: 700;
+  margin: 16px 0 0
+}
+
+#subContents .esg .top .subTitle {
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+  padding: 60px 0 0;
+  margin: -70px auto 0;
+  position: relative;
+  z-index: 2
+}
+
+#subContents .esg .top .subTitle .pBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+  margin: 60px 0 0
+}
+
+#subContents .esg .top .subTitle .pBox p {
+  color: #222;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  line-height: 1.5555;
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .esg .itemBox {
+  display: flex;
+  flex-direction: column;
+  gap: 80px 0;
+  margin: 100px 0 0
+}
+
+#subContents .esg .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+#subContents .esg dl * {
+  color: #222
+}
+
+#subContents .esg dl dt {
+  font-weight: 700
+}
+
+#subContents .esg dl dd p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  line-height: 1.5555
+}
+
+#subContents .esg.ethical .top {
+  margin: 0 0 160px
+}
+
+#subContents .esg.ethical .item {
+  justify-content: space-between
+}
+
+#subContents .esg.ethical .text {
+  padding: 0 30px 0 0
+}
+
+#subContents .esg.ethical dl dt {
+  margin: 15px 0 40px
+}
+
+#subContents .esg.ethical ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0
+}
+
+#subContents .esg.ethical ul li {
+  display: flex
+}
+
+#subContents .esg.ethical ul li span {
+  display: block;
+  flex-shrink: 0;
+  width: 3px;
+  height: 3px;
+  background: #222;
+  border-radius: 50%;
+  margin: 10px 6px 0 0
+}
+
+#subContents .esg.social .item,
+#subContents .esg.safety .item {
+  gap: 0 40px
+}
+
+#subContents .esg.social .item>div,
+#subContents .esg.safety .item>div {
+  width: calc(50% - 20px)
+}
+
+#subContents .esg.social .text.right,
+#subContents .esg.safety .text.right {
+  text-align: right
+}
+
+#subContents .esg.social dl dt,
+#subContents .esg.safety dl dt {
+  margin: 0 0 40px
+}
+
+#subContents .esg.social dl dd b {
+  display: block;
+  color: #00508e;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 10px
+}
+
+#subContents .tabTitle.type70 {
+  width: 100%;
+  height: 74px;
+  display: flex;
+  margin: 0 0 90px;
+}
+
+#subContents .tabTitle.type70 li {
+  background: #f4f4f4;
+  width: 100%;
+  height: 100%
+}
+
+#subContents .tabTitle.type70 li button,
+#subContents .tabTitle.type70 li a {
+  color: #777;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  font-family: "Pretendard", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#subContents .tabTitle.type70 li.on {
+  background: #00508e
+}
+
+#subContents .tabTitle.type70 li.on button,
+#subContents .tabTitle.type70 li.on a {
+  color: #fff
+}
+
+#subContents .chapter {
+  padding: 0 0 100px;
+  position: relative
+}
+
+#subContents .chapter * {
+  font-family: "Pretendard", sans-serif
+}
+
+#subContents .chapter::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: -2;
+  transform: translateX(-50%);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: right bottom
+}
+
+#subContents .chapter .textBox,
+#subContents .chapter .dlBox,
+#subContents .chapter ul {
+  display: flex;
+  flex-direction: column
+}
+
+#subContents .chapter .textBox {
+  gap: 100px 0;
+  margin: 90px 0 0
+}
+
+#subContents .chapter .title {
+  text-align: center;
+  margin: 0 0 50px
+}
+
+#subContents .chapter .title b {
+  color: #00508e;
+  font-size: 1.8rem
+}
+
+#subContents .chapter .title h4 {
+  color: #222;
+  font-weight: 700;
+  margin: 12px 0 0
+}
+
+#subContents .chapter .dlBox {
+  gap: 60px 0
+}
+
+#subContents .chapter dl * {
+  color: #222;
+  letter-spacing: -0.025em
+}
+
+#subContents .chapter dl dt {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 20px
+}
+
+#subContents .chapter dl dd {
+  font-size: 1.8rem;
+  font-weight: 300
+}
+
+#subContents .chapter dl dd p {
+  line-height: 1.5555
+}
+
+#subContents .chapter ul {
+  gap: 12px 0;
+  padding: 14px 10px;
+}
+
+#subContents .chapter ul li {
+  font-size: 1.7rem;
+  font-weight: 300
+}
+
+#subContents .report {
+  padding: 0 0 140px
+}
+
+#subContents .report .enquiry h6 {
+  color: #222;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 15px
+}
+
+#subContents .report .enquiry .privacyBox {
+  margin: 60px 0 0
+}
+
+#subContents .report .enquiry .privacyBox .text {
+  height: 400px;
+  background: #f6f6f6;
+  padding: 40px;
+  overflow-y: scroll
+}
+
+#subContents .report .enquiry .privacyBox .dlBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0
+}
+
+#subContents .report .enquiry .privacyBox dl {
+  font-size: 1.5rem
+}
+
+#subContents .report .enquiry .privacyBox dl dt {
+  color: #222;
+  font-weight: 500;
+  margin: 0 0 10px
+}
+
+#subContents .report .enquiry .privacyBox dl dd {
+  font-weight: 300;
+  line-height: 1.7333
+}
+
+#subContents .report .enquiry .privacyBox .formButton {
+  margin: 75px auto 0
+}
+
+#subContents .guideline::before {
+  background-image: url("/img/sub/guidelineBg.jpg")
+}
+
+#subContents .report .note {
+  border: 1px solid #ccc;
+  padding: 60px 65px;
+  margin: 40px 0 50px
+}
+
+#subContents .report .note dl {
+  display: flex;
+  gap: 0 70px;
+  color: #222;
+  font-size: 2.4rem;
+  font-weight: 700
+}
+
+#subContents .report .note dd>p {
+  line-height: 1.5555;
+  margin: 0 0 40px
+}
+
+#subContents .report .note p {
+  color: #222;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: -0.025em
+}
+
+#subContents .report .note ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0
+}
+
+#subContents .report .note ul li {
+  gap: 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+#subContents .report .note ul li i {
+  color: #00508e
+}
+
+#subContents .report .note ul li p {
+  line-height: 1.2
+}
+
+#subContents .rules .chapter::before {
+  background-image: url("/img/sub/rulesBg.jpg")
+}
+
+#subContents .tableWrap {
+	display: flex;
+	flex-direction: column;
+	gap: 100px 0;
+}
+
+#subContents .tableBox h5 {
+	color: #333333;
+	font-weight: 600;
+}
+
+#subContents .tableBox span {
+	display: block;
+	margin: 10px 0 30px;
+}
+
+#subContents .tableBox table {
+	border-top: 1px solid #222;
+	border-left: 1px solid #ccc;
+}
+
+#subContents .tableBox table caption {
+	color: #000;
+	font-weight: 300;
+	text-align: right;
+	margin: 0 0 5px;
+}
+
+#subContents .tableBox table th,
+#subContents .tableBox table td {
+	height: 60px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-size: 1.7rem;
+	padding: 0 20px;
+}
+
+#subContents .tableBox table th {
+	color: #222;
+	font-weight: 500;
+	background: #f8f8f8;
+}
+
+#subContents .tableBox table td {
+	color: #444;
+}
+
+#subContents .tableBox table .right {
+	text-align: right;
+}
+
+#subContents .media .subTopTitle,
+#subContents .notice .subTopTitle,
+#subContents .view .subTopTitle {
+  border-bottom: none;
+  margin: 0
+}
+
+#subContents .media .itemBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 76px 26px
+}
+
+#subContents .media .img {
+  width: 100%;
+  padding: 34.5% 0;
+  margin: 0 0 20px;
+  position: relative
+}
+
+#subContents .media .img img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#subContents .media .text * {
+  letter-spacing: -0.05em
+}
+
+#subContents .media .text h6,
+#subContents .media .text p {
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical
+}
+
+#subContents .media .text h6 {
+  height: 3.0908em;
+  color: #222;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.5454
+}
+
+#subContents .media .text p,
+#subContents .media .text span {
+  font-size: 1.5rem;
+  font-weight: 300
+}
+
+#subContents .media .text p {
+  height: 3.2em;
+  color: #666;
+  line-height: 1.6;
+  margin: 10px 0 30px
+}
+
+#subContents .media .text span {
+  color: #aaa
+}
+
+#subContents .center .icon3Row {
+  gap: 55px 10px
+}
+
+#subContents .center .icon3Row li p {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.05em
+}
+
+#subContents .center .icon3Row li p span {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin: 10px 0 0
+}
+
+#subContents .center .icon3Row li p span b {
+  font-weight: 500
+}
+
+#subContents .center hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  border-top: 1px dashed #ccc;
+  margin: 65px 0
+}
+
+/* contanct */
+/* 230522 */
+#subContents .contact * {
+	font-family: 'Pretendard';
+}
+
+#subContents .contact td button {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #aaa;
+  color: #fff;
+  margin: 0 auto;
+}
+
+#subContents .contact td button i {
+  font-size: 1.8rem;
+}
+
+#subContents .contact .inquiryBox {
+  margin: 100px 0 0;
+}
+
+
+#subContents .contact .inquiryBox > p {
+  text-align: right;
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 0 30px;
+}
+
+#subContents .contact .inquiryBox .red {
+  color: #D10000;
+  font-size: 1.5rem;
+}
+
+#subContents .contact .inquiryBox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+#subContents .contact .inquiryBox ul li {
+  width: calc(50% - 10px);
+  background: #f7f7f7;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+#subContents .contact .inquiryBox ul input,
+#subContents .contact .inquiryBox ul textarea {
+  background: transparent;
+  font-size: 1.6rem;
+}
+
+#subContents .contact .inquiryBox ul li.width100 {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px 0;
+}
+
+#subContents .contact .inquiryBox ul li textarea {
+  height: 110px;
+}
+
+#subContents .contact .inquiryBox ul li > div {
+  width: 100%;
+}
+
+#subContents .contact .inquiryBox ul h6 {
+  width: 140px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: #555555;
+  font-size: 1.8rem;
+}
+
+#subContents .contact .inquiryBox ul li.policy {
+  gap: 0;
+  flex-direction: row;
+  padding: 30px;
+  gap: 0 40px;
+}
+
+#subContents .contact .inquiryBox ul .policy h6 {
+  line-height: 1.4;
+}
+
+#subContents .contact .inquiryBox pre {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  color: #aaaaaa;
+  font-weight: 300;
+}
+
+#subContents .contact .inquiryBox ul .policy .scroll {
+  height: 230px;
+  overflow-y: scroll;
+  margin: 0 0 30px;
+}
+
+#subContents .contact .inquiryBox ul .automatic {
+  position: relative;
+}
+
+#subContents .contact .inquiryBox ul .automatic input {
+  padding: 0 25px;
+}
+
+#subContents .contact .inquiryBox ul .automatic input::placeholder {
+  font-size: 1.8rem;
+  color: #888;
+}
+
+#subContents .contact .inquiryBox ul .automatic .img,
+#subContents .contact .inquiryBox ul .automatic button {
+  flex-shrink: 0;
+}
+
+#subContents .contact .inquiryBox ul .automatic button {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#subContents .contact .inquiryBox ul .check {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+#subContents .contact .inquiryBox ul .check input[type=checkbox],
+#subContents .contact .inquiryBox ul .check label {
+  cursor: pointer;
+}
+
+#subContents .contact .inquiryBox ul .check input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(102, 102, 102, 0.5)
+}
+
+#subContents .contact .inquiryBox ul .check input[type=checkbox]:checked {
+  background: url("/img/sub/checkIcon.png") no-repeat center / 10px 8px;
+  border-color: #00508e;
+}
+
+#subContents .contact .inquiryBox > a {
+  display: flex;
+  width: 235px;
+  height: 58px;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    color: #666;
+    font-weight: 500;
+    border: 1px solid rgba(102, 102, 102, 0.3);
+	margin: 30px 0 0 auto;
+}

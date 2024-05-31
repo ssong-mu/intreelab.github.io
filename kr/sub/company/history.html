@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <title>인트리 주식회사</title>
+  <meta charset="UTF-8">
+  <!--#include virtual="/site/setting.html" -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <link rel="shortcut" href="파일이름.ico">
+  <link rel="stylesheet" type="text/css" href="/css/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="/js/jquery.fullpage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/js/common.js"></script>
+  <script>
+    var windowWidth = window.screen.width
+    setViewPort(windowWidth);
+    function setViewPort(w_width) {
+      if (w_width <= 420 ){
+        $("meta[name=viewport]").attr("content", "width=420, maximum-scale=2.0, user-scalable=no, target-densitydpi=medium-dpi");
+      } else {
+        $("meta[name=viewport]").attr("content", "width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi");
+      } 
+    }
+    $(window).resize(function(){
+      var windowWidth = window.screen.width
+      setViewPort(windowWidth);
+    });
+    function updateOrientation() {
+      var orientationValue = window.orientation
+      if (orientationValue == 90 || orientationValue == -90) {
+        $("meta[name=viewport]").attr("content",
+          "width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes,target-densitydpi=medium-dpi"
+        );
+      }
+    }
+    window.onload = function() {
+      document.body.onorientationchange = updateOrientation;
+    }
+
+    if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+      window.location = 'microsoft-edge:' + window.location;
+      setTimeout(function() {
+        window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+      }, 1);
+    }
+  </script>
+</head>
+<body>
+
+<div class="cursor"><i class="xi-plus"></i></div>
+
+<div id="wrap">
+  <header class="">
+    <div class="headerBox">
+      <h1 class="logo">
+        <a href="/kr/index.html"><img class="svg" src="/img/svg/logo.svg" alt=""></a>
+      </h1>
+      <nav>
+        <ul id="gnb" class="depth1">
+					<li>
+						<a href="/kr/sub/company/overview.html">회사소개</a>
+						<ul class="depth2 menu01">
+							<li><a href="/kr/sub/company/overview.html">기업개요</a></li>
+							<li><a href="/kr/sub/company/ceo.html">인사말</a></li>
+							<li><a href="/kr/sub/company/history.html">연혁</a></li>
+							<li><a href="/kr/sub/company/philosophy.html">사업장 소개</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/kr/sub/products/list.html" data-sub_url="/kr/sub/products/detail.html">제품소개</a>
+						<ul class="depth2 menu02">
+              <li><a href="/kr/sub/company/overview.html">GLASS Substrate</a></li>
+							<li><a href="/kr/sub/company/ceo.html">OLED TEG SELL</a></li>
+							<li><a href="/kr/sub/company/history.html">R&D Service</a></li>
+							<li><a href="/kr/sub/company/philosophy.html">Sputtering Process</a></li>
+              <li><a href="/kr/sub/company/philosophy.html">NAS Photo Mask</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/kr/sub/ir/stock.html">기술소개</a>
+						<ul class="depth2 menu04">
+							<li><a href="/kr/sub/ir/disclosure.html" data-sub_url="/kr/sub/ir/rules.html,/kr/sub/ir/notice.html,/kr/sub/ir/noticeView.html">기술</a></li>
+							<li><a href="/kr/sub/ir/media.html" data-sub_url="/kr/sub/ir/mediaView.html">인프라</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/kr/sub/pr/center.html">고객센터</a>
+						 <ul class="depth2 menu06">
+							<li><a href="/kr/sub/pr/center.html">고객센터</a></li>
+						</ul>
+					</li>
+        </ul>
+      </nav>
+      <div class="languageBox">
+        <button class="languageButton">
+          <div class="icon"><img class="svg" src="/img/svg/languageIcon.svg" alt=""></div>
+          <span>KR</span>
+          <i class="xi-caret-down-min"></i>
+        </button>
+        <ul>
+          <li><a href="/kr/index.html">KR</a></li>
+          <li><a href="/en/index.html">EN</a></li>
+          <!--<li><a href="/cn/index.html">CH</a></li>
+          <li><a href="/jp/index.html">JP</a></li>-->
+        </ul>
+      </div>
+      <button class="searchButton">
+        <img src="/img/common/searchIcon.png" alt="">
+      </button>
+      <button class="menuButton menuOpen">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" id="" class="svg all_button replaced-svg">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #fff;
+              }
+            </style>
+          </defs>
+          <circle class="cls-1" cx="2" cy="2" r="2"></circle>
+          <circle id="Ellipse_15_copy" data-name="Ellipse 15 copy" class="cls-1 cls-2" cx="13" cy="2" r="2"></circle>
+          <circle id="Ellipse_15_copy_2" data-name="Ellipse 15 copy 2" class="cls-1 cls-3" cx="2" cy="13" r="2"></circle>
+          <circle id="Ellipse_15_copy_2-2" data-name="Ellipse 15 copy 2" class="cls-1 cls-4" cx="13" cy="13" r="2"></circle>
+        </svg>
+      </button>
+    </div>
+    <div class="searchBox">
+      <div class="inner">
+        <h4 class="font32">
+          <b>찾으시는 제품</b>이 <br>
+          있으신가요?
+        </h4>
+        <form name="searchform" method="post" action="/kr/sub/products/list.html">
+          <label for="">
+            <input type="text" name="s_keyword" placeholder="검색어를 입력해주세요.">
+            <button type="button" onclick="search_form()"><img src="/img/common/searchIcon.png" alt=""></button>
+          </label>
+        </form>	
+      </div>
+    </div>
+  </header>
+  <div class="allMenu">
+    <button class="menuButton menuClose"><i class="xi-close"></i></button>
+    <div class="flexBox">
+      <div class="bg"><img src="/img/common/menuBg.jpg" alt=""></div>
+      <ul id="snb"><li>
+            <a href="/kr/sub/company/overview.asp">COMPANY</a>
+            <ul class="depth2 menu01">
+							<li><a href="/kr/sub/company/overview.html">기업개요</a></li>
+							<li><a href="/kr/sub/company/ceo.html">인사말</a></li>
+							<li><a href="/kr/sub/company/history.html">연혁</a></li>
+							<li><a href="/kr/sub/company/philosophy.html">사업장 소개</a></li>
+            </ul>
+          </li>
+    </div>
+  </div>
+
+<!--index 페이지 아닐때-->
+  <script src="/js/sub.js"></script>
+  <script>
+  $pageIndex = 1;
+  </script>
+  <div id="subWrap">
+    <section id="sv" class="sv01 on">
+      <div class="subVisual">
+        <div class="bg"></div>
+        <h2 class="font64">COMPANY</h2>
+      </div>
+      <div class="pathBox">
+        <div class="width1400">
+          <ul class="path">
+            <li class="home">
+              <a href="/kr/index.asp">
+                <i class="xi-home"></i>
+              </a>
+            </li>
+            <li class="path1">
+              <button><span>COMPANY</span><i class="xi-angle-down-min"></i></button>
+              <ul><li>
+            <a href="/kr/sub/company/overview.asp">COMPANY</a>
+            
+          </li>
+          <li>
+            <a href="/kr/sub/products/list.asp" data-sub_url="/kr/sub/products/detail.asp">PRODUCTS</a>
+            
+          </li>
+          <li>
+            <a href="/kr/sub/pr/center.asp">CUSTOMER</a>
+             
+          </li></ul>
+            </li>
+            
+            <li class="path2">
+              <button><span>기업개요</span><i class="xi-angle-down-min"></i></button>
+              <ul>
+                <li class="on"><a href="/kr/sub/company/overview.asp">기업개요</a></li>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="subContents" class="clearfix">
+
+
+<article class="subPage history">
+	<div class="box">
+		<div class="width1400">
+			<div class="subTopTitle">
+				<h3 class="font40" data-aos="fade-down" data-aos-duration="600">연혁</h3>
+			</div>
+			<div class="contents">
+				<ul class="tab">
+					<li class="on">
+						<button type="button"><span></span>2020</button>
+					</li>
+					<li>
+						<button type="button"><span></span>2010</button>
+					</li>
+				</ul>
+				<div class="itemBox">
+					<div class="item" data-aos="fade-up" data-aos-duration="600">
+						<div class="img"><img src="/img/sub/historyImg1.jpg" alt=""></div>
+						<div class="text">
+							<b>2020<em>s</em></b>
+							<ul>
+                <li>
+                  <span>2020.03</span>
+                  <div class="pBox">
+                      <p>인천 가좌동 공장 확장 Incheon Gajwa-dong Factory Expansion</p>
+                  </div>
+              </li>
+							</ul>
+						</div>
+					</div>
+					<div class="item" data-aos="fade-up" data-aos-duration="600">
+						<div class="img">
+							<img src="/img/sub/historyImg2.jpg" alt="">
+						</div>
+						<div class="text">
+							<b>2010<em>s</em></b>
+							<ul>
+                <li>
+                  <span>2019.10</span>
+                  <div class="pBox">
+                      <p>인천 가좌동 공장 설립 Incheon Gajwa-dong Factory Establishment</p>
+                  </div>
+                </li>
+                <li>
+                  <span>2019.03</span>
+                  <div class="pBox">
+                      <p>해외(일본) 특허 1건 등록 Register 1 patent overseas (Japan)</p>
+                  </div>
+                </li>
+                <li>
+                  <span>2018.12</span>
+                  <div class="pBox">
+                      <p>해외(중국,미국,일본) 특허 3건 등록 Registration of 3 patents overseas (China, United States, Japan)</p>
+                  </div>
+                </li>
+                <li>
+                  <span>2017.05</span>
+                  <div class="pBox">
+                      <p>국내특허 1건 등록 Registration of 1 domestic patent</p>
+                  </div>
+                </li>
+                <li>
+                  <span>2016.12</span>
+                  <div class="pBox">
+                      <p>국내특허 3건 등록 Registration of 3 domestic patents</p>
+                  </div>
+                </li>
+                <li>
+                  <span>2016.04</span>
+                  <div class="pBox">
+                      <p>기업부설연구소 설립 Establishment of Corporate Affiliated Research Institute</p>
+                  </div>
+                </li>
+                <li>
+                    <span>2015.06</span>
+                    <div class="pBox">
+                        <p>자본금 증자 (300 million → 400 million)</p>
+                    </div>
+                </li>
+                <li>
+                    <span>2014.06</span>
+                    <div class="pBox">
+                        <p>인트리 주식회사 설립 Establishment of Intree Inc.</p>
+                    </div>
+                </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<script>
+	$(document).ready(function(){
+		var tab = $(".tab"),
+        year = tab.children("li"),
+				listBox = $(".history .itemBox > .item"),
+				listBoxTopArray = [],
+				footerTop = $("footer").position().top,
+				innerHeight = $(window).innerHeight();
+
+		listBox.each(function(index){
+			listBoxTopArray.push($(this).offset().top);
+		});
+
+		year.each(function(index){
+			$(this).on("click", function(){
+				year.removeClass("on");
+				$(this).toggleClass("on");
+				$("html, body").animate({
+					scrollTop: listBoxTopArray[index] - 100,
+					behavior: "smooth"
+				})
+			})
+		})
+		$(window).on("load resize scroll", function(){
+			var scrollTop = $(this).scrollTop(),
+          contentsTop = $(".history .box").offset().top;
+			
+			if(scrollTop >= contentsTop) {
+				tab.addClass("fixed")
+			}else {
+				tab.removeClass("fixed");
+			}
+
+			if (scrollTop + innerHeight >= footerTop) {
+				var tabTop = scrollTop - $(".history .itemBox").height() - 140
+				tab.css("transform", "translateY(-" + tabTop + "px)");
+			} else {
+				tab.css("transform", "translateY(0)");
+			}
+			listBox.each(function(index){
+				var listBoxTop = $(this).offset().top;
+				if(scrollTop >= listBoxTop - 100) {
+					year.removeClass("on");
+					year.eq(index).addClass("on");
+				}
+			});
+		});
+	})
+</script>
+
+</section><!--#subContents-->
+</div><!--#subWrap-->
+
+<footer class="section fp-auto-height">
+  <div class="width1560">
+    <div class="footerBox">
+      <div class="bottom">
+        <div class="infoBox">
+          <h6>인트리 주식회사</h6>
+          <ul class="info">
+            <li>본사 : 경기도 과천시 찬우물로 24-6 (갈현동 7-8) </li>
+            <li>E-mail : intree@intreelab.com</li>
+          </ul>
+        </div>
+        <div class="flexBox column">
+          <a href="/kr/index.html" class="logo"><img src="/img/common/footerLogo.png" alt=""></a>
+          <p class="copy">Copyright (C) 2020 INTREE Co., Ltd. ALL RIGHTS RESERVED. designed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+</body>
+</html>

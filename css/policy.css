@@ -1,0 +1,138 @@
+.font25 {
+  --fontsize: 2.5rem;
+  font-size: var(--fontsize)
+}
+
+.font26 {
+  --fontsize: 2.6rem;
+  font-size: var(--fontsize)
+}
+
+.font28 {
+  --fontsize: 2.8rem;
+  font-size: var(--fontsize)
+}
+
+.font32 {
+  --fontsize: 3.2rem;
+  font-size: var(--fontsize)
+}
+
+.font36 {
+  --fontsize: 3.6rem;
+  font-size: var(--fontsize)
+}
+
+.font38 {
+  --fontsize: 3.8rem;
+  font-size: var(--fontsize)
+}
+
+.font40 {
+  --fontsize: 4.0rem;
+  font-size: var(--fontsize)
+}
+
+.font45 {
+  --fontsize: 4.5rem;
+  font-size: var(--fontsize)
+}
+
+.font56 {
+  --fontsize: 5.6rem;
+  font-size: var(--fontsize)
+}
+
+.font60 {
+  --fontsize: 6.0rem;
+  font-size: var(--fontsize)
+}
+
+.font64 {
+  --fontsize: 6.4rem;
+  font-size: var(--fontsize)
+}
+
+.font65 {
+  --fontsize: 6.5rem;
+  font-size: var(--fontsize)
+}
+
+.font80 {
+  --fontsize: 8.0rem;
+  font-size: var(--fontsize)
+}
+
+.privacy * {
+  line-height: 1.4
+}
+
+.privacy .contents {
+  display: flex;
+  flex-direction: column;
+  gap: 60px 0
+}
+
+.privacy h5 {
+  color: #222;
+  font-size: 2rem;
+  font-weight: 600
+}
+
+.privacy h6 {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500
+}
+
+.privacy dl dd>p {
+  color: #444;
+  font-size: 1.8rem;
+  margin: 20px 0
+}
+
+.privacy dl dd>ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px 0;
+  padding: 0 10px
+}
+
+.privacy dl.subText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0
+}
+
+.privacy dl.subText dt {
+  color: #444;
+  font-size: 1.7rem
+}
+
+.privacy dl.subText dd {
+  padding: 0 0 0 10px
+}
+
+.privacy .subTextBox {
+  padding: 0 10px
+}
+
+.privacy .subTextBox>dl {
+  margin: 10px 0
+}
+
+@media(max-width: 768px) {
+  .privacy .contents {
+    gap: 40px 0
+  }
+
+  .privacy br {
+    display: none
+  }
+}
+
+@media(max-width: 640px) {
+  .privacy .subTextBox {
+    padding: 0
+  }
+}

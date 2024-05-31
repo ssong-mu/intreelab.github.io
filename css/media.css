@@ -1,0 +1,1741 @@
+.font25 {
+  --fontsize: 2.5rem;
+  font-size: var(--fontsize)
+}
+
+.font26 {
+  --fontsize: 2.6rem;
+  font-size: var(--fontsize)
+}
+
+.font28 {
+  --fontsize: 2.8rem;
+  font-size: var(--fontsize)
+}
+
+.font30 {
+  --fontsize: 3.0rem;
+  font-size: var(--fontsize)
+}
+
+.font32 {
+  --fontsize: 3.2rem;
+  font-size: var(--fontsize)
+}
+
+.font36 {
+  --fontsize: 3.6rem;
+  font-size: var(--fontsize)
+}
+
+.font38 {
+  --fontsize: 3.8rem;
+  font-size: var(--fontsize)
+}
+
+.font40 {
+  --fontsize: 4.0rem;
+  font-size: var(--fontsize)
+}
+
+.font45 {
+  --fontsize: 4.5rem;
+  font-size: var(--fontsize)
+}
+
+.font56 {
+  --fontsize: 5.6rem;
+  font-size: var(--fontsize)
+}
+
+.font60 {
+  --fontsize: 6.0rem;
+  font-size: var(--fontsize)
+}
+
+.font64 {
+  --fontsize: 6.4rem;
+  font-size: var(--fontsize)
+}
+
+.font65 {
+  --fontsize: 6.5rem;
+  font-size: var(--fontsize)
+}
+
+.font80 {
+  --fontsize: 8.0rem;
+  font-size: var(--fontsize)
+}
+
+@media(max-width: 1800px) {
+  .allMenu .flexBox {
+    gap: 0 60px
+  }
+
+  .allMenu #snb {
+    margin: 0 90px 0 0
+  }
+
+  .allMenu #snb .depth2 {
+    gap: 0 40px
+  }
+
+  #subContents .history .itemBox {
+    width: 100%;
+    max-width: calc(100% - 60px);
+    margin: 0 0 0 auto
+  }
+}
+
+@media(max-width: 1600px) {
+  .font80 {
+    font-size: calc(var(--fontsize)*.8)
+  }
+
+  .font65,
+  .font64,
+  .font60,
+  .font56 {
+    font-size: calc(var(--fontsize)*.92)
+  }
+
+  .width1560,
+  .width1400 {
+    padding: 0 20px
+  }
+
+  header .headerBox {
+    padding: 0 0 0 20px
+  }
+
+  header .headerBox>* {
+    flex-shrink: 0
+  }
+
+  header nav .depth1>li {
+    padding: 0 36px
+  }
+
+  .allMenu #snb>li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px 0;
+    padding: 30px 0;
+    position: relative
+  }
+
+  .allMenu #snb>li>a {
+    width: 100%;
+    font-size: 2.6rem
+  }
+
+  #fullpage .products .productsSlide {
+    max-width: 400px
+  }
+
+  #fullpage .products .swiper-slide .img {
+    max-width: 400px
+  }
+
+  #fullpage .about ul {
+    max-width: 1000px;
+    height: 280px
+  }
+
+  #fullpage .about ul li {
+    padding: 40px 30px
+  }
+
+  #fullpage .about ul li dl dd br {
+    display: none
+  }
+
+  #fullpage .board {
+    background-size: 50% 100%
+  }
+
+  #fullpage .board .contents {
+    gap: 0 120px
+  }
+
+  #fullpage .board .pr,
+  #fullpage .board .recruit {
+    width: 50%;
+    padding: 0
+  }
+
+  #subContents .history .tab {
+    left: 20px
+  }
+
+  #subContents .history .tab.fixed {
+    left: 20px
+  }
+
+  #subContents .history .itemBox {
+    width: 100%;
+    max-width: calc(100% - 120px);
+    gap: 80px 0;
+    margin: 0 0 0 auto
+  }
+
+  #subContents .history b {
+    font-size: 5rem
+  }
+
+  #subContents .history b em {
+    font-size: 4.2rem
+  }
+
+  #subContents .affiliate .item:nth-child(odd) .text {
+    padding: 0
+  }
+
+  #subContents .esg.ethical .item {
+    gap: 0 40px
+  }
+
+  #subContents .report .note {
+    padding: 40px
+  }
+}
+
+@media(max-width: 1400px) {
+  .font80 {
+    font-size: calc(var(--fontsize)*.66)
+  }
+
+  .font65,
+  .font64,
+  .font60,
+  .font56 {
+    font-size: calc(var(--fontsize)*.78)
+  }
+
+  header nav {
+    transform: translate(calc(-50% - 50px), -50%)
+  }
+
+  header nav .depth1>li {
+    padding: 0 26px
+  }
+
+  header nav .depth1>li:hover>a::before {
+    width: calc(100% + 40px)
+  }
+
+  header nav .depth2::before {
+    transform: translateX(calc(-50% + 50px))
+  }
+
+  .allMenu .bg {
+    display: none
+  }
+
+  .allMenu #snb {
+    margin: 0 90px
+  }
+
+  #fullpage .products .productsSlide {
+    max-width: 320px
+  }
+
+  #fullpage .products .swiper-pagination li {
+    gap: 0 20px;
+    padding: 20px 40px
+  }
+
+  #fullpage .subsidiary .item .on {
+    padding: 40px
+  }
+
+  #fullpage .board .pr .itemBox {
+    gap: 0 20px
+  }
+
+  #subContents .ceo .itemBox {
+    gap: 0 40px;
+    align-items: flex-start
+  }
+
+  #subContents .ceo .text {
+    flex-shrink: 0
+  }
+
+  #subContents .philosophy .textBox .text {
+    flex-direction: column;
+    gap: 30px 0
+  }
+
+  #subContents .philosophy .textBox h5 {
+    width: 100%
+  }
+
+  #subContents .affiliate .item>div {
+    width: auto
+  }
+
+  #subContents .affiliate .text {
+    flex-shrink: 0
+  }
+
+  #subContents .affiliate .pBox {
+    gap: 30px 0;
+    margin: 30px 0 40px
+  }
+
+  #subContents .productsList .item {
+    padding: 40px 30px
+  }
+
+  #subContents .productsDetail .contents {
+    gap: 0 40px
+  }
+
+  #subContents .productsDetail .info {
+    padding: 0
+  }
+
+  #subContents .report .note dl {
+    gap: 0 40px
+  }
+
+  #subContents .report .note dl dt {
+    flex-shrink: 0
+  }
+
+  #subContents .report .note dl dd>p br {
+    display: none
+  }
+}
+
+@media(max-width: 1200px) {
+  html,
+  body {
+    font-size: 56.25%
+  }
+
+  header nav {
+    display: none
+  }
+
+  #fullpage .section:not(.visual):not(.board):not(.esg) .box {
+    padding: 100px 0
+  }
+
+  #fullpage .products::before {
+    display: none
+  }
+
+  #fullpage .products .contents {
+    flex-direction: column;
+    gap: 60px 0
+  }
+
+  #fullpage .products .textBox,
+  #fullpage .products .productsSlideBox {
+    width: 100%
+  }
+
+  #fullpage .products .textBox {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between
+  }
+
+  #fullpage .products .productsSlide {
+    max-width: 60%
+  }
+
+  #fullpage .products .swiper-slide {
+    max-width: 100%;
+    display: flex;
+    justify-content: center
+  }
+
+  #fullpage .products .swiper-slide .img {
+    max-width: calc(100% - 80px);
+    transform: translateX(-60px)
+  }
+
+  #fullpage .products .swiper-slide .img img {
+    max-height: calc(100% - 80px)
+  }
+
+  #fullpage .products .swiper-slide.swiper-slide-active .img {
+    transform: translateX(0)
+  }
+
+  #fullpage .products .swiper-pagination {
+    margin: 0 0 0 -20px;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translateY(0)
+  }
+
+  #fullpage .about .contents {
+    gap: 60px 0
+  }
+
+  #fullpage .subsidiary .itemBox {
+    height: 340px;
+    gap: 10px
+  }
+
+  #subContents .workplace .top {
+    flex-direction: column-reverse;
+	gap: 20px 0;
+  }
+
+  #fullpage .board .contents {
+    gap: 40px
+  }
+
+  #fullpage .board .box {
+    padding: 100px 0
+  }
+
+  #fullpage .board .pr .titleBox ul {
+    gap: 0 30px
+  }
+
+  #fullpage .esg {
+    position: relative
+  }
+
+  #fullpage .esg .title {
+    top: 100px
+  }
+
+  #fullpage .esg .item {
+    padding: 260px 0 100px
+  }
+
+  #fullpage .esg .item .arrow {
+    margin: 80px 0 0
+  }
+
+  .subPage .subTopTitle {
+    margin: 0 0 60px
+  }
+
+  #sv .path .detailPath {
+    display: none;
+  }
+
+  #subContents .icon3RowBox .text {
+    flex-direction: column;
+    gap: 40px 0
+  }
+
+  #subContents .icon3RowBox .text h4 {
+    width: 100%
+  }
+
+  #subContents .overview h4 br {
+    display: block
+  }
+
+  #subContents .overview .info {
+    margin: 0 0 80px
+  }
+
+  #subContents .overview .info ul {
+    margin: 60px 0 0
+  }
+
+  #subContents .overview .info .circle {
+    width: 160px;
+    height: 160px
+  }
+
+  #subContents .overview .introduction {
+    padding: 80px 0
+  }
+
+  #subContents .overview .introduction .flexBox {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px 0
+  }
+
+  #subContents .overview .introduction .itemBox {
+    max-width: 100%;
+    height: auto;
+    gap: 40px 0
+  }
+
+  #subContents .overview .model {
+    margin: 80px 0 0
+  }
+
+  #subContents .overview .model ul {
+    gap: 0 20px
+  }
+
+  #subContents .overview .model ul li {
+    padding: 40px 20px
+  }
+
+  #subContents .ceo .itemBox {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px 0
+  }
+
+  #subContents .history .tab {
+    top: 140px
+  }
+
+  #subContents .history .tab.fixed {
+    top: 140px
+  }
+
+  #subContents .history .img .point {
+    max-width: 22%;
+    top: 32%;
+  }
+
+  #subContents .philosophy ul li .icon {
+    height: 60px;
+    margin: 0 0 20px
+  }
+
+  #subContents .philosophy .textBox {
+    gap: 60px 0;
+    margin: 80px 0 0
+  }
+
+  #subContents .affiliate .item {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px 0
+  }
+
+  #subContents .affiliate .item>div {
+    width: 100%;
+    max-width: 680px
+  }
+
+  #subContents .affiliate .img {
+    order: 1
+  }
+
+  #subContents .affiliate .text {
+    order: 2
+  }
+
+  #subContents .workplace .infra ul {
+    gap: 40px 20px;
+  }
+
+  #subContents .customers .item ul {
+    gap: 10px
+  }
+
+  #subContents .customers .item ul li {
+    height: 100px;
+    padding: 30px
+  }
+
+  #subContents .productsList .productsMenu>li ul {
+    padding: 12px 0
+  }
+
+  #subContents .productsList .contents {
+    gap: 0 40px
+  }
+
+  #subContents .productsList .itemBox {
+    gap: 10px
+  }
+
+	#subContents .productsList .item {
+		padding: 30px 20px;
+	}
+
+  #subContents .esg .top .subTitle {
+    margin: 0
+  }
+
+  #subContents .esg .top .subTitle .pBox {
+    margin: 40px 0 0
+  }
+
+  #subContents .esg .itemBox {
+    gap: 60px 0;
+    margin: 80px 0 0
+  }
+
+  #subContents .esg .item {
+    flex-direction: column;
+    gap: 40px 0
+  }
+
+  #subContents .esg .text {
+    order: 1
+  }
+
+  #subContents .esg .img {
+    order: 2
+  }
+
+  #subContents .esg.ethical .top {
+    margin: 0 0 80px
+  }
+
+  #subContents .esg.ethical .item {
+    gap: 40px 0
+  }
+
+  #subContents .esg.ethical .text {
+    width: 100%;
+    max-width: 700px;
+    padding: 0
+  }
+
+  #subContents .esg dl dd p {
+    text-align: left !important;
+  }
+
+  #subContents .esg.social .item,
+  #subContents .esg.safety .item {
+    gap: 40px 0
+  }
+
+  #subContents .esg.social .item>div,
+  #subContents .esg.safety .item>div {
+    width: 100%;
+    max-width: 660px
+  }
+
+  #subContents .esg.social .text.right,
+  #subContents .esg.safety .text.right {
+    text-align: left
+  }
+
+  #subContents .report .note dl {
+    flex-direction: column;
+    gap: 30px 0
+  }
+
+  #subContents .report .note dl dd>p {
+    margin: 0 0 20px
+  }
+
+	#subContents .tableBox table th,
+	#subContents .tableBox table td {
+		font-size: 1.6rem;
+		padding: 0 10px;
+	}
+
+  #subContents .media .itemBox {
+    gap: 30px 15px
+  }
+
+  footer .link {
+    gap: 0 30px
+  }
+}
+
+@media(max-width: 960px) {
+  .font80 {
+    font-size: calc(var(--fontsize)*.56)
+  }
+
+  .font65,
+  .font64,
+  .font60,
+  .font56 {
+    font-size: calc(var(--fontsize)*.64)
+  }
+
+  .font45 {
+    font-size: calc(var(--fontsize)*.72)
+  }
+
+  .font40,
+  .font38,
+  .font36,
+  .font32 {
+    font-size: calc(var(--fontsize)*.8)
+  }
+
+  .font30,
+  .font28 {
+    font-size: calc(var(--fontsize)*.84)
+  }
+
+  header .searchBox .inner {
+	padding: 0;
+  }
+
+  header .searchBox label {
+    width: 400px;
+  }
+
+  .allMenu #snb {
+    margin: 0 90px 0 40px
+  }
+
+  .allMenu #snb .depth2 {
+    gap: 0 30px
+  }
+
+  .hoverButton .icon {
+    width: 40px;
+    height: 40px
+  }
+
+  #fullpage .section:not(.visual):not(.board):not(.esg) .box {
+    padding: 80px 0
+  }
+
+  #fullpage .products .textBox ul {
+    gap: 0 40px
+  }
+
+  #fullpage .products .swiper-pagination li {
+    padding: 20px 30px
+  }
+
+  #fullpage .products .swiper-pagination li .icon {
+    width: 32px
+  }
+
+  #fullpage .products .swiper-pagination li dl dt {
+    font-size: 2rem;
+    margin: 0 0 10px
+  }
+
+  #fullpage .about h2 {
+    margin: 0 0 20px
+  }
+
+  #fullpage .about ul {
+    height: 240px
+  }
+
+  #fullpage .about ul li {
+    padding: 30px 20px
+  }
+
+  #fullpage .about ul li .icon {
+    height: 46px
+  }
+
+  #fullpage .subsidiary .item .on {
+    padding: 30px 20px
+  }
+
+  #fullpage .subsidiary .item .on .shortcut .icon {
+    width: 40px;
+    height: 40px
+  }
+
+  #fullpage .board {
+    background-size: 100% 50%;
+    background-position: bottom center
+  }
+
+  #fullpage .board .box {
+    padding: 0 0 80px
+  }
+
+  #fullpage .board .contents {
+    flex-direction: column;
+    gap: 60px 0
+  }
+
+  #fullpage .board .pr,
+  #fullpage .board .recruit {
+    width: 100%
+  }
+
+  #fullpage .esg .title {
+    top: 80px
+  }
+
+  #fullpage .esg .item {
+    padding: 220px 0 80px
+  }
+
+  #fullpage .esg .item .arrow {
+    width: 40px;
+    height: 40px
+  }
+
+  #subContents .overview .info p {
+    margin: 20px 0 0
+  }
+
+  #subContents .overview .info p br {
+    display: none
+  }
+
+  #subContents .overview .info .circle {
+    width: 120px;
+    height: 120px
+  }
+
+  #subContents .overview .model ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+  }
+
+  #subContents .overview .model ul li {
+    width: calc(50% - 10px)
+  }
+
+  #subContents .history .tab {
+    flex-direction: row;
+    gap: 0 40px;
+    justify-content: center;
+    position: relative;
+    top: auto;
+    left: auto
+  }
+
+  #subContents .history .tab.fixed {
+    position: relative;
+    top: auto;
+    left: auto
+  }
+
+  #subContents .history .itemBox {
+    max-width: 100%;
+    margin: 60px 0 0
+  }
+
+  #subContents .philosophy ul {
+    padding: 0
+  }
+
+  #subContents .philosophy ul li dl dt {
+    font-size: 2.4rem
+  }
+
+  #subContents .philosophy ul li dl dt b {
+    font-size: 2.8rem
+  }
+
+  #subContents .productsList .itemBox {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  #subContents .productsDetail .contents {
+    flex-direction: column;
+    gap: 40px 0
+  }
+
+  #subContents .productsDetail .contents>div {
+    width: 100%
+  }
+
+  #subContents .productsDetail .contents .img {
+    padding: 40px
+  }
+
+  #subContents .productsDetail .contents .img img {
+    position: inherit;
+    top: auto;
+    left: auto;
+    transform: translate(0, 0)
+  }
+
+  #subContents .esg .top .subTitle .pBox {
+    margin: 40px 0 0
+  }
+
+  #subContents .esg .top .subTitle .pBox p br {
+    display: none
+  }
+
+  #subContents .chapter .textBox {
+    gap: 80px 0;
+    margin: 60px 0 0
+  }
+
+  #subContents .chapter .dlBox {
+    gap: 40px 0
+  }
+
+  #subContents .report .note {
+    padding: 20px
+  }
+
+  #subContents .report .enquiry .privacyBox .text {
+    height: 300px;
+    padding: 20px
+  }
+
+	#subContents .tableBox {
+		overflow-x: scroll;
+	}
+
+	#subContents .tableBox table {
+		width: 920px;
+	}
+
+  #subContents .media .itemBox {
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  #subContents .media .text h6 {
+    font-size: 1.9rem
+  }
+
+  /* 230522 */
+  /* vacuum */
+  /* contanct */
+  #subContents .vacuumDetail .info p {
+    margin: 40px 0 30px;
+  }
+  #subContents .vacuumDetail .tabTitle li {
+    height: 60px;
+  }
+  #subContents .vacuumDetail .tabTitle li button {
+    font-size: 1.7rem;
+  }
+  #subContents .contact .inquiryBox ul {
+    gap: 20px 0;
+  }
+  #subContents .contact .inquiryBox ul li.policy,
+  #subContents .contact .inquiryBox ul li {
+    padding: 20px;
+	width: 100%;
+  }
+
+  footer .bottom {
+    align-items: flex-end
+  }
+
+  footer .info {
+    grid-template-columns: repeat(1, auto);
+    gap: 12px 0
+  }
+
+  footer .logo {
+    margin: 0 0 20px
+  }
+}
+
+@media(max-width: 768px) {
+  .font80 {
+    font-size: calc(var(--fontsize)*.46)
+  }
+
+  .font65,
+  .font64,
+  .font60,
+  .font56 {
+    font-size: calc(var(--fontsize)*.54)
+  }
+  
+  .font30,
+  .font28,
+  .font26,
+  .font25 {
+    font-size: calc(var(--fontsize)*.78)
+  }
+
+  .menuButton {
+    width: 65px;
+    height: 65px
+  }
+
+  header {
+    height: 65px
+  }
+
+  header h1 {
+    width: 120px;
+    height: 30px
+  }
+
+  header .languageBox {
+    margin: 0 5px 0 auto
+  }
+
+  header .searchButton {
+  }
+
+  header .searchBox .inner {
+	flex-direction: column;
+	gap: 30px 0;
+  }
+
+  header .searchBox .inner br {
+	display: none;
+  }
+
+  .allMenu .flexBox {
+    align-items: flex-start
+  }
+
+  .allMenu #snb {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 65px 65px 0 20px
+  }
+
+  .allMenu #snb>li {
+    gap: 0;
+    border-bottom: none;
+    padding: 0
+  }
+
+  .allMenu #snb>li>a {
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 0
+  }
+
+  .allMenu #snb .depth2 {
+    display: block;
+    padding: 10px 0 0;
+    display: none
+  }
+
+  .allMenu #snb .depth2 li a {
+    display: block;
+    padding: 10px 0
+  }
+
+  #fullpage .visual .bg {
+    height: calc(100% + 65px);  
+  }
+
+  #fullpage .visual .swiper-slide-active.on .bg {
+	bottom: -65px;
+  }
+  
+  #fullpage .visual .bottom {
+	height: calc(100vh - 80px);
+  }
+
+  #fullpage .visual .bottom .buttonBox {
+    transform: scale(0.8);
+    transform-origin: left bottom
+  }
+
+  #fullpage .products .contents {
+    gap: 40px 0
+  }
+
+  #fullpage .products .textBox {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px 0
+  }
+
+  #fullpage .products .textBox ul {
+    margin: 0 0 0 auto
+  }
+
+  #fullpage .subsidiary .itemBox {
+    height: auto;
+    flex-direction: column
+  }
+
+  #fullpage .subsidiary .item {
+    padding: 60px 0
+  }
+
+  #fullpage .subsidiary .item.on {
+    padding: 120px 0
+  }
+
+  #fullpage .board .recruit ul li {
+    height: 60px;
+    padding: 0 20px
+  }
+
+  #fullpage .esg .box {
+    padding: 80px 0
+  }
+
+  #fullpage .esg .contents {
+    gap: 60px 0
+  }
+
+  #fullpage .esg .title {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translateX(0)
+  }
+
+  #fullpage .esg .itemBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px
+  }
+
+  #fullpage .esg .item {
+    padding: 0
+  }
+
+  #fullpage .esg .item::before {
+    display: none
+  }
+
+  #fullpage .esg .item .text {
+    position: inherit
+  }
+
+  #fullpage .esg .item .arrow {
+    margin: 40px 0 0
+  }
+
+  #sv {
+    height: 240px
+  }
+
+  #sv .pathBox {
+    display: none
+  }
+
+  .subPage {
+    padding: 70px 0
+  }
+
+  .subPage .subTopTitle {
+    margin: 0 0 40px
+  }
+
+  #subContents .icon3Row {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  #subContents .overview .info ul {
+    flex-wrap: wrap;
+    justify-content: center
+  }
+
+  #subContents .overview .info ul li {
+    width: 33.3333333333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
+  #subContents .ceo .pBox {
+    gap: 20px 0
+  }
+
+  #subContents .ceo .pBox p br {
+    display: none
+  }
+
+  #subContents .history .text {
+    flex-direction: column;
+    gap: 10px 0
+  }
+
+  #subContents .history b {
+    width: 100%;
+    font-size: 4rem
+  }
+
+  #subContents .history b em {
+    font-size: 3.2rem
+  }
+
+  #subContents .philosophy ul li .icon {
+    height: 46px;
+    margin: 0 0 10px
+  }
+
+  #subContents .philosophy .textBox p br {
+    display: block
+  }
+
+  #subContents .workplace .infra ul,
+  #subContents .workplace .infra ul.grid3 {
+    gap: 30px 5px;
+  }
+  #subContents .workplace .infra ul.grid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #subContents .customers .tabTitle,
+  #subContents .tabTitle.type70 {
+    height: 60px
+  }
+
+  #subContents .customers .item ul {
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  #subContents .customers .item ul li {
+    padding: 20px
+  }
+
+  #subContents .productsList .contents {
+    flex-direction: column;
+    gap: 20px 0
+  }
+
+	#subContents .productsList .productsMenu {
+		width: 100%;
+		max-width: 260px;
+	}
+
+  #subContents .esg.ethical dl dt {
+    margin: 15px 0 20px
+  }
+
+  #subContents .report .enquiry .privacyBox .formButton {
+    margin: 50px auto 0
+  }
+
+	#subContents .tableWrap {
+		gap: 70px 0;
+	}
+
+  /* 230522 */
+  /* vacuum */
+  /* contanct */
+	#subContents .tableBox.new table td {
+	  padding: 15px 10px;
+	}
+	#subContents .vacuumDetail .download a {
+	  width: 140px;
+	  height: 55px;
+	  font-size: 1.6rem;
+	}
+	#subContents .contact .inquiryBox ul li.policy {
+	  flex-direction: column;
+	  gap: 20px 0;
+	}
+	#subContents .contact .inquiryBox ul .policy .scroll {
+	  height: 180px;
+	  margin: 0 0 20px;
+	}
+
+  footer .top,
+  footer .bottom {
+    flex-direction: column;
+    align-items: flex-start
+  }
+
+  footer .top {
+    gap: 40px 0
+  }
+
+  footer .familySite,
+  footer .column {
+    margin: 0 0 0 auto
+  }
+
+  footer .logo {
+    width: 135;
+    height: 33px
+  }
+}
+
+@media(max-width: 640px) {
+  .font80 {
+    font-size: calc(var(--fontsize)*.36)
+  }
+
+  .font65,
+  .font64,
+  .font60,
+  .font56 {
+    font-size: calc(var(--fontsize)*.44)
+  }
+
+  .font45,
+  .font40,
+  .font38,
+  .font36,
+  .font32 {
+    font-size: calc(var(--fontsize)*.64)
+  }
+
+  header .languageBox {
+    margin: 0 10px 0 auto
+  }
+
+  header .searchBox form {
+    width: 100%;
+  }
+
+  header .searchBox label {
+	width: calc(100% - 40px);
+	padding: 0 20px;
+	margin: 0 auto;
+  }
+
+  #fullpage .products .textBox p {
+    font-size: 1.6rem
+  }
+
+  #fullpage .products .productsSlideBox {
+    flex-direction: column
+  }
+
+  #fullpage .products .productsSlide {
+    max-width: 100%
+  }
+
+  #fullpage .products .swiper-slide a {
+	display: block;
+	padding: 40px;
+  }
+
+  #fullpage .products .swiper-slide .img {
+    max-width: 100%;
+	margin: 0 auto;
+  }
+
+  #fullpage .products .swiper-pagination {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0
+  }
+
+  #fullpage .products .swiper-pagination li {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    text-align: center;
+    padding: 20px
+  }
+
+  #fullpage .products .swiper-pagination li .dot3Arrow {
+    display: none
+  }
+
+  #fullpage .about p {
+    font-size: 1.6rem
+  }
+
+  #fullpage .about p br {
+    display: none
+  }
+
+  #fullpage .about ul {
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr)
+  }
+
+  #fullpage .about ul::before,
+  #fullpage .about ul::after {
+    width: calc(100% - 20px);
+    height: 1px;
+    border-right: none;
+    border-bottom: 1px dotted #a8a8a8;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+
+  #fullpage .about ul::before {
+    top: 33.3333333333%
+  }
+
+  #fullpage .about ul::after {
+    top: 66.6666666667%
+  }
+
+  #fullpage .board .pr .itemBox {
+    gap: 0 10px
+  }
+
+  #fullpage .board .pr .item .text {
+    margin: 15px 0
+  }
+
+  #fullpage .board .pr .item .text h5 {
+    font-size: 1.8rem
+  }
+
+  #fullpage .board .recruit .title {
+    margin: 20px 0 0
+  }
+
+  #fullpage .board .recruit ul {
+    margin: 40px 0 0
+  }
+  #fullpage .esg .box,
+  #fullpage .esg .contents {
+  	height: auto;
+  }
+  #fullpage .esg .itemBox {
+	display: flex;
+	flex-direction: column;
+    gap: 30px 0;
+    padding: 0 20px;
+  }
+
+  #fullpage .esg .item a {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left
+  }
+
+  #fullpage .esg .item .icon {
+    display: none
+  }
+
+  #fullpage .esg .item .text {
+    width: auto;
+    display: flex;
+    gap: 0 12px
+  }
+
+  #fullpage .esg .item .text h4 {
+    margin: 0 0 10px
+  }
+
+  #fullpage .esg .item .arrow {
+    flex-shrink: 0;
+    margin: 0
+  }
+
+  #sv {
+    height: 200px
+  }
+
+  .subPage {
+    padding: 50px 0
+  }
+
+  #subContents .icon3RowBox .text {
+    gap: 30px 0
+  }
+
+  #subContents .icon3Row {
+    grid-template-columns: repeat(1, 1fr)
+  }
+
+  #subContents .overview .info p {
+    font-size: 1.6rem
+  }
+
+  #subContents .overview .introduction .flexBox {
+    gap: 20px 0
+  }
+
+  #subContents .overview .introduction h6 {
+    font-size: 2rem
+  }
+
+  #subContents .overview .introduction table th,
+  #subContents .overview .introduction table td {
+    font-size: 1.6rem
+  }
+
+  #subContents .overview .introduction table th {
+    width: 120px
+  }
+
+  #subContents .overview .introduction table td {
+    padding: 10px 15px
+  }
+
+  #subContents .overview .model ul {
+    flex-direction: column;
+    gap: 20px 0
+  }
+
+  #subContents .overview .model ul li {
+    width: 100%
+  }
+
+  #subContents .ceo .pBox {
+    margin: 30px 0
+  }
+
+  #subContents .ceo .pBox p {
+    font-size: 1.6rem
+  }
+
+  #subContents .ceo h6 {
+    font-size: 2rem
+  }
+
+  #subContents .history .itemBox {
+    gap: 50px 0;
+    margin: 40px 0 0
+  }
+
+  #subContents .history .text {
+    margin: 20px 0 0
+  }
+
+  #subContents .history ul li {
+    flex-direction: column;
+    gap: 10px 0
+  }
+
+  #subContents .history .pBox p {
+    font-size: 1.6rem
+  }
+
+  #subContents .philosophy ul {
+    flex-wrap: wrap;
+    flex-direction: row
+  }
+
+  #subContents .philosophy ul li {
+    width: 50%;
+    padding: 25% 0
+  }
+
+  #subContents .philosophy ul li:not(:last-child) {
+    margin: 0
+  }
+
+  #subContents .philosophy ul li:nth-child(1) {
+    order: 4
+  }
+
+  #subContents .philosophy ul li:nth-child(2) {
+    order: 3
+  }
+
+  #subContents .philosophy ul li:nth-child(3) {
+    order: 2
+  }
+
+  #subContents .philosophy ul li:nth-child(4) {
+    order: 1
+  }
+
+  #subContents .affiliate .pBox {
+    gap: 20px 0
+  }
+
+  #subContents .affiliate .pBox p {
+    font-size: 1.6rem
+  }
+
+  #subContents .affiliate .pBox p br {
+    display: none
+  }
+
+  #subContents .workplace dl dt {
+    font-size: 1.8rem
+  }
+
+  #subContents .workplace dl dd p span {
+    font-size: 1.6rem
+  }
+
+  #subContents .workplace.icon3RowBox .itemBox {
+    gap: 40px 0;
+  }
+
+  #subContents .workplace .infra h6 {
+    font-size: 2.2rem;
+  }
+
+  #subContents .workplace .infra ul,
+  #subContents .workplace .infra ul.grid3 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px 0;
+  }
+
+  #subContents .customers .tabTitle,
+  #subContents .tabTitle.type70 {
+    height: 46px
+  }
+
+  #subContents .customers .tabTitle li button,
+  #subContents .tabTitle.type70 li button {
+    font-size: 1.5rem
+  }
+
+  #subContents .customers .item ul {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  #subContents .customers .item ul li {
+    height: 80px;
+    padding: 20px 40px
+  }
+
+  #subContents .productsList .productsMenu {
+    width: 100%
+  }
+
+	#subContents .productsList .itemBox {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+  #subContents .productsList dl {
+    margin: 30px 0 0
+  }
+
+  #subContents .productsList dl dt {
+    font-size: 1.8rem
+  }
+
+  #subContents .productsList dl dd {
+    font-size: 1.5rem
+  }
+
+  #subContents .productsDetail .list {
+    margin: 30px 0 20px
+  }
+
+  #subContents .productsDetail .button {
+    height: 50px
+  }
+
+  #subContents .productsDetail hr {
+    margin: 30px 0
+  }
+
+  #subContents .esg dl dd p {
+    font-size: 1.6rem
+  }
+
+  #subContents .esg dl dd p br {
+    display: none
+  }
+
+  #subContents .esg.social dl dt,
+  #subContents .esg.safety dl dt {
+    margin: 0 0 20px
+  }
+
+  #subContents .chapter .textBox {
+    gap: 60px 0;
+    margin: 40px 0 0
+  }
+
+  #subContents .chapter dl dt {
+    font-size: 2rem;
+    margin: 0 0 10px
+  }
+
+  #subContents .chapter dl dd {
+    font-size: 1.6rem
+  }
+
+  #subContents .report .note dl {
+    gap: 20px 0
+  }
+
+  #subContents .media .itemBox {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 10px
+  }
+
+  #subContents .media .text h6 {
+    font-size: 1.7rem
+  }
+
+  #subContents .media .text p {
+    margin: 10px 0 20px
+  }
+
+  /* 230522 */
+  /* vacuum */
+  /* contanct */
+  #subContents .tableBox.new table th {
+    height: 60px;
+  }
+  #subContents .tableBox.new table th, #subContents .tableBox.new table td {
+    padding: 15px;
+  }
+  #subContents .vacuumDetail .tabTitle {
+    margin: 60px 0 40px;
+	flex-wrap: wrap;
+  }
+  #subContents .vacuumDetail .tabTitle li {
+    height: 50px;
+  }
+  #subContents .vacuumDetail .tabTitle li button {
+    font-size: 1.6rem;
+  }
+  #subContents .vacuumDetail .tabTitle li {
+    width: 50%;
+  }
+  #subContents .vacuumDetail .tabContents h3 {
+    margin: 0 0 20px;
+  }
+  #subContents .vacuumDetail .features h5, #subContents .vacuumDetail .features ul li {
+    padding: 15px 10px;
+  }
+  #subContents .vacuumDetail .features ul li {
+    font-size: 1.6rem;
+  }
+  #subContents .vacuumDetail .features ul,
+  #subContents .vacuumDetail .download ul {
+    margin-bottom: 60px;
+  }
+  #subContents .vacuumDetail .part .bottom td {
+    height: 80px;
+  }
+  #subContents .vacuumDetail .part .buttons {
+    gap: 0 10px;
+  }
+  #subContents .vacuumDetail .part .buttons a,
+  #subContents .vacuumDetail .download a {
+    width: auto;
+	height: auto;
+	padding: 15px;
+  }
+  #subContents .vacuumDetail .download ul li {
+    padding: 15px;
+  }
+  #subContents .vacuumDetail .download h5 {
+    font-size: 2.1rem;
+  }
+  #subContents .contact .inquiryBox ul li {
+    height: auto;
+	gap: 10px 0;
+	flex-direction: column;
+	align-items: flex-start;
+  }
+  #subContents .contact .inquiryBox ul .automatic input {
+    padding: 0 15px;
+  }
+  #subContents .contact .inquiryBox > a {
+    width: 140px;
+	height: 50px;
+  }
+  #subContents .contact .inquiryBox ul .automatic button {
+    width: auto;
+	height: auto;
+	position: relative;
+	top: auto;
+	right: auto;
+	bottom: auto;
+  }
+
+  footer .link {
+    width: 100%;
+    display: grid;
+    gap: 15px 0;
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  footer .info li {
+    font-size: 1.3rem
+  }
+}
+
+@media(max-width: 420px) {
+  html,
+  body {
+    font-size: 50%
+  }
+	#subContents .tableBox table th,
+	#subContents .tableBox table td {
+		height: 52px;
+		font-size: 1.7rem;
+	}
+}

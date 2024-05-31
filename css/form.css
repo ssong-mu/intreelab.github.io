@@ -1,0 +1,682 @@
+.font25 {
+  --fontsize: 2.5rem;
+  font-size: var(--fontsize)
+}
+
+.font26 {
+  --fontsize: 2.6rem;
+  font-size: var(--fontsize)
+}
+
+.font28 {
+  --fontsize: 2.8rem;
+  font-size: var(--fontsize)
+}
+
+.font32 {
+  --fontsize: 3.2rem;
+  font-size: var(--fontsize)
+}
+
+.font36 {
+  --fontsize: 3.6rem;
+  font-size: var(--fontsize)
+}
+
+.font38 {
+  --fontsize: 3.8rem;
+  font-size: var(--fontsize)
+}
+
+.font40 {
+  --fontsize: 4.0rem;
+  font-size: var(--fontsize)
+}
+
+.font45 {
+  --fontsize: 4.5rem;
+  font-size: var(--fontsize)
+}
+
+.font56 {
+  --fontsize: 5.6rem;
+  font-size: var(--fontsize)
+}
+
+.font60 {
+  --fontsize: 6.0rem;
+  font-size: var(--fontsize)
+}
+
+.font64 {
+  --fontsize: 6.4rem;
+  font-size: var(--fontsize)
+}
+
+.font65 {
+  --fontsize: 6.5rem;
+  font-size: var(--fontsize)
+}
+
+.font80 {
+  --fontsize: 8.0rem;
+  font-size: var(--fontsize)
+}
+
+.paging * {
+  font-family: "Pretendard", sans-serif
+}
+
+.paging a {
+  color: #666;
+  border: none
+}
+
+.paging .arr a {
+  margin: 0 !important
+}
+
+.paging ul {
+  gap: 0 5px;
+  padding: 0 10px
+}
+
+.paging ul li {
+  margin: 0 !important
+}
+
+.paging ul li a {
+  transition: all .4s
+}
+
+.paging ul li:hover a,
+.paging ul li.on a {
+  background: #0269ab;
+  color: #fff
+}
+
+select {
+  font-weight: 500;
+  border: none;
+  outline: none;
+  appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #f6f6f6 url("/img/sub/selectArrow.png") no-repeat calc(100% - 20px) center
+}
+
+select::-ms-expand {
+  display: none
+}
+
+.formButton {
+  width: 220px;
+  height: 60px;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background: #0269ab;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.searchBox {
+  width: 100%;
+  gap: 0 10px;
+  margin: 0 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.searchBox select,
+.searchBox label {
+  height: 60px;
+  color: #222;
+  font-size: 1.6rem;
+  padding: 0 20px
+}
+
+.searchBox select {
+  width: 240px
+}
+
+.searchBox label {
+  width: 650px;
+  max-width: 100%;
+  justify-content: space-between;
+  gap: 0 10px;
+  background: #f6f6f6;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.searchBox label input[type=text] {
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%
+}
+
+.searchBox label input[type=submit] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  font-size: 0;
+  background-image: url("/img/sub/searchIcon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center
+}
+
+.boardBox * {
+  font-family: "Pretendard", sans-serif
+}
+
+.boardBox table {
+  border-top: 1px solid #222;
+  table-layout: fixed
+}
+
+.boardBox table th,
+.boardBox table td {
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  letter-spacing: -0.025em
+}
+
+.boardBox table th {
+  color: #222;
+  font-size: 1.7rem;
+  font-weight: 500
+}
+
+.boardBox table th.line div {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.boardBox table th.line div::before,
+.boardBox table th.line div::after {
+  content: "|";
+  color: #aaa;
+  font-size: 13px
+}
+
+.boardBox table td {
+  color: #999;
+  font-size: 1.6rem
+}
+
+.boardBox table td.left {
+  text-align: left
+}
+
+.boardBox table td.subject {
+  padding: 0 20px
+}
+
+.boardBox table td.subject a {
+  color: #444;
+  font-size: 1.7rem;
+  -webkit-line-clamp: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  display: -webkit-box
+}
+
+.viewBox {
+  border-top: 1px solid #222
+}
+
+.viewBox * {
+  font-family: "Pretendard", sans-serif
+}
+
+.viewBox>div:not(.content) {
+  border-bottom: 1px solid #ddd
+}
+
+.viewBox .titleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 20px
+}
+
+.viewBox .titleBox * {
+  letter-spacing: -0.025em
+}
+
+.viewBox .titleBox h5 {
+  color: #222;
+  font-weight: 600;
+  margin: 0 0 20px
+}
+
+.viewBox .titleBox p {
+  color: #999;
+  font-weight: 300;
+  gap: 0 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.viewBox .content {
+  padding: 40px 20px
+}
+
+.viewBox .viewButtonBox {
+  border-top: 1px solid #ddd
+}
+
+.viewBox dl {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.viewBox dl:not(:last-child) {
+  border-bottom: 1px solid #ddd
+}
+
+.viewBox dl * {
+  font-size: 1.6rem
+}
+
+.viewBox dl dt {
+  width: 200px;
+  height: 100%;
+  justify-content: space-between;
+  flex-shrink: 0;
+  font-weight: 500;
+  padding: 0 15px 0 25px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.viewBox dl dt::after {
+  content: "|";
+  color: #ccc;
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.viewBox dl dd {
+  width: 100%;
+  padding: 0 25px
+}
+
+.viewBox dl dd a {
+  display: block;
+  width: 100%;
+  color: #666;
+  font-weight: 300;
+  transition: all .4s;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.viewBox>a {
+  color: #fff;
+  margin: 60px auto 0
+}
+
+.inputCheck {
+  gap: 0 5px;
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.inputCheck input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  background: #f6f6f6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer
+}
+
+.inputCheck input[type=checkbox]:checked {
+  background: url("/img/sub/checkIcon.png") no-repeat center
+}
+
+.inputCheck label {
+  color: #222;
+  font-size: 1.7rem;
+  cursor: pointer
+}
+
+input[type=text],
+textarea {
+  width: 100%
+}
+
+.enquiryBox * {
+  font-family: "Pretendard", sans-serif
+}
+
+.enquiryBox select,
+.enquiryBox input[type=text] {
+  height: 50px
+}
+
+.enquiryBox input[type=text],
+.enquiryBox textarea {
+  background: #f6f6f6
+}
+
+.enquiryBox textarea {
+  height: 350px;
+  resize: none
+}
+
+.enquiryBox .width450 {
+  width: 450px
+}
+
+.enquiryBox .width350 {
+  width: 350px
+}
+
+.enquiryBox .width250 {
+  width: 250
+}
+
+.enquiryBox ul {
+  border-top: 1px solid #222
+}
+
+.enquiryBox ul li {
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.enquiryBox ul li>p {
+  width: 250px;
+  flex-shrink: 0;
+  color: #222;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  text-align: center
+}
+
+.enquiryBox ul li>div {
+  width: 100%;
+  gap: 0 10px;
+  background: #fff;
+  border-left: 1px solid #ddd;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.enquiryBox ul li>div span {
+  display: block;
+  flex-shrink: 0;
+  color: #222;
+  margin: 0 10px
+}
+
+.enquiryBox ul li.inputFile label,
+.enquiryBox ul li.inputFile span {
+  height: 50px;
+  letter-spacing: -0.025em
+}
+
+.enquiryBox ul li.inputFile label {
+  width: 200px;
+  flex-shrink: 0;
+  background: #333;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.enquiryBox ul li.inputFile label input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.enquiryBox ul li.inputFile span {
+  width: calc(100% - 210px);
+  display: block;
+  background: #f6f6f6;
+  color: #aaa;
+  font-weight: 300;
+  padding: 0 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+@media(max-width: 1600px) {
+
+  .enquiryBox ul li.inputMail select,
+  .enquiryBox ul li.inputMail input[type=text],
+  .enquiryBox ul li.inputPhone select,
+  .enquiryBox ul li.inputPhone input[type=text] {
+    width: 100%
+  }
+}
+
+@media(max-width: 1200px) {
+  .enquiryBox ul li>p {
+    width: 160px
+  }
+}
+
+@media(max-width: 960px) {
+  .viewBox dl dt {
+    width: 140px
+  }
+
+  .enquiryBox ul li>div span {
+    margin: 0
+  }
+
+  .enquiryBox ul li.inputFile label {
+    width: 120px
+  }
+
+  .enquiryBox ul li.inputFile span {
+    width: calc(100% - 130px)
+  }
+}
+
+@media(max-width: 768px) {
+  .paging {
+    margin-top: 40px
+  }
+
+  .boardBox table colgroup,
+  .boardBox table thead,
+  .boardBox table th:first-child,
+  .boardBox table td:first-child {
+    display: none
+  }
+
+  .boardBox table tr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px 0;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    position: relative
+  }
+
+  .boardBox table td {
+    height: auto;
+    order: 2;
+    border-bottom: none
+  }
+
+  .boardBox table td.subject {
+    order: 1;
+    width: 100%;
+    padding: 0
+  }
+
+  .boardBox table td.after::after {
+    content: "|";
+    color: #999;
+    font-size: 1.4rem;
+    margin: 0 10px
+  }
+
+  .boardBox table a.absolute {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%)
+  }
+
+  .boardBox table .download i {
+    font-size: 3.2rem
+  }
+
+  .viewBox .titleBox {
+    padding: 30px 20px
+  }
+
+  .viewBox h5 {
+    font-size: 2.2rem
+  }
+
+  .viewBox dl {
+    height: 50px
+  }
+
+  .enquiryBox ul li {
+    flex-direction: column;
+    gap: 10px 0;
+    background: #fff;
+    padding: 20px 0
+  }
+
+  .enquiryBox ul li>p {
+    width: 100%;
+    text-align: left
+  }
+
+  .enquiryBox ul li>div {
+    padding: 0
+  }
+}
+
+@media(max-width: 640px) {
+  .formButton {
+    width: 120px;
+    height: 44px
+  }
+
+  .paging a {
+    width: 30px;
+    height: 30px
+  }
+
+  .paging ul {
+    padding: 0
+  }
+
+  .searchBox select,
+  .searchBox label {
+    height: 46px
+  }
+
+  .boardBox table tr {
+    padding: 20px 10px
+  }
+
+  .boardBox table a.linkButton {
+    right: 10px
+  }
+
+  .viewBox .titleBox {
+    padding: 20px 10px
+  }
+
+  .viewBox h5 {
+    font-size: 1.8rem;
+    margin: 0 0 10px
+  }
+
+  .viewBox dl * {
+    font-size: 1.5rem
+  }
+
+  .viewBox dl dt {
+    width: 100px;
+    padding: 0 10px
+  }
+
+  .viewBox dl dd {
+    padding: 0 10px
+  }
+
+  .viewBox a.formButton {
+    margin: 20px auto 60px
+  }
+
+  .enquiryBox select,
+  .enquiryBox input[type=text] {
+    height: 44px
+  }
+
+  .enquiryBox textarea {
+    height: 260px
+  }
+
+  .enquiryBox ul li.inputFile label,
+  .enquiryBox ul li.inputFile span {
+    height: 44px
+  }
+
+  .enquiryBox ul li.inputFile label {
+    width: 100px
+  }
+
+  .enquiryBox ul li.inputFile span {
+    width: calc(100% - 110px)
+  }
+}
